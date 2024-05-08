@@ -12,7 +12,7 @@ def replace_string_in_file(file_path, old_str, new_str):
         print(f'File "{file_path}" not found.')
 
 # Specify the file path
-file_path = '/home/dan/Documents/savedPromptsDP/claude/analyza.md'
+file_path = '/home/dan/Documents/savedPromptsDP/bingCopilot/analyza.md'
 
 # Specify the string to be replaced and the new string
 old_str = 'USER'
@@ -22,8 +22,8 @@ new_str = 'Daniel Dominko: \n---\n'
 replace_string_in_file(file_path, old_str, new_str)
 
 # Specify the string to be replaced and the new string
-old_str = 'Poe'
-new_str = 'Claude: \n---\n'
+old_str = 'BING'
+new_str = 'Bing Copilot: \n---\n'
 
 # Call the function to replace the string in the file
 replace_string_in_file(file_path, old_str, new_str)
