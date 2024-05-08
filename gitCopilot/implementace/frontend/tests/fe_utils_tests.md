@@ -1,6 +1,10 @@
-ddomin212: how can I refactor the chartUtils tests?
+Daniel Dominko: 
+---
+how can I refactor the chartUtils tests?
 
-GitHub Copilot: To refactor the `chartUtils` tests, you can consider the following steps:
+GitHub Copilot: 
+---
+To refactor the `chartUtils` tests, you can consider the following steps:
 
 1. Group the tests by functionality or method.
 2. Use `beforeEach` to set up any necessary test data or mocks.
@@ -91,9 +95,13 @@ describe("chartUtils", () => {
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: how can I refactor the parsingUtils tests?
+Daniel Dominko: 
+---
+how can I refactor the parsingUtils tests?
 
-GitHub Copilot: To refactor the `parsingUtils` tests, you can consider the following steps:
+GitHub Copilot: 
+---
+To refactor the `parsingUtils` tests, you can consider the following steps:
 
 1. Group the tests by functionality or method.
 2. Use `beforeEach` to set up any necessary test data or mocks.
@@ -222,9 +230,13 @@ describe("parsingUtils", () => {
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: how can I refactor the timeUtils tests?
+Daniel Dominko: 
+---
+how can I refactor the timeUtils tests?
 
-GitHub Copilot: To refactor the `timeUtils` tests, you can consider the following steps:
+GitHub Copilot: 
+---
+To refactor the `timeUtils` tests, you can consider the following steps:
 
 1. Group the tests by functionality or method.
 2. Use `beforeEach` to set up any necessary test data or mocks.

@@ -1,6 +1,10 @@
-ddomin212: please give me a test for the WeatherInfo component using react testing library
+Daniel Dominko: 
+---
+please give me a test for the WeatherInfo component using react testing library
 
-GitHub Copilot: Sure, here's an example test for the `WeatherInfo` component using React Testing Library:
+GitHub Copilot: 
+---
+Sure, here's an example test for the `WeatherInfo` component using React Testing Library:
 
 ```javascript
 import React from 'react';
@@ -24,9 +28,13 @@ describe('WeatherInfo', () => {
 
 This test checks that the `WeatherInfo` component renders the correct weather information based on the `weatherData` prop passed to it. It uses the `render` function from React Testing Library to render the component and then uses the `getByText` and `getByAltText` functions to find elements in the rendered component and assert that they contain the expected text or alt text.
 
-ddomin212: could you give me a test for the WeatherStats component?
+Daniel Dominko: 
+---
+could you give me a test for the WeatherStats component?
 
-GitHub Copilot: Sure, here's an example test for the `WeatherStats` component using React Testing Library:
+GitHub Copilot: 
+---
+Sure, here's an example test for the `WeatherStats` component using React Testing Library:
 
 ```javascript
 import React from 'react';
@@ -63,9 +71,13 @@ describe('WeatherStats', () => {
 
 This test checks that the `WeatherStats` component renders the correct weather stats based on the `stats` prop passed to it. It uses the `render` function from React Testing Library to render the component and then uses the `getByText` function to find elements in the rendered component and assert that they contain the expected text.
 
-ddomin212: how can i reformulate this get by text query if the degrees are in a span element? "expect(getByText("RealFeel:20°"));"
+Daniel Dominko: 
+---
+how can i reformulate this get by text query if the degrees are in a span element? "expect(getByText("RealFeel:20°"));"
 
-GitHub Copilot: Sure, you can use the `getByTestId` function to select the span element that contains the temperature value. Here's an example:
+GitHub Copilot: 
+---
+Sure, you can use the `getByTestId` function to select the span element that contains the temperature value. Here's an example:
 
 ```javascript
 import React from 'react';
@@ -109,9 +121,13 @@ In this example, we added a `data-testid` attribute to the span element that con
 
 Then, in the test, we use the `getByTestId` function to select the span element and assert that it contains the expected text content.
 
-ddomin212: could you give me a test for the TemperatureAndDetails component?
+Daniel Dominko: 
+---
+could you give me a test for the TemperatureAndDetails component?
 
-GitHub Copilot: Sure, here's an example test for the `TemperatureAndDetails` component using React Testing Library:
+GitHub Copilot: 
+---
+Sure, here's an example test for the `TemperatureAndDetails` component using React Testing Library:
 
 ```javascript
 import React from 'react';

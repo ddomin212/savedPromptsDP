@@ -1,6 +1,10 @@
-ddomin212: how do i protect my fastapi app from CSRF using fastapi_csrf_protect
+Daniel Dominko: 
+---
+how do i protect my fastapi app from CSRF using fastapi_csrf_protect
 
-GitHub Copilot: To protect your FastAPI app from CSRF using `fastapi_csrf_protect`, you can follow these steps:
+GitHub Copilot: 
+---
+To protect your FastAPI app from CSRF using `fastapi_csrf_protect`, you can follow these steps:
 
 1. Install the `fastapi_csrf_protect` package using pip:
 
@@ -42,9 +46,13 @@ app.add_middleware(CsrfProtectMiddleware, csrf_secret="your_secret_key")
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: where would you locate the parsing logic, inside "utils" or somewhere else?
+Daniel Dominko: 
+---
+where would you locate the parsing logic, inside "utils" or somewhere else?
 
-GitHub Copilot: The location of the parsing logic depends on the specific use case and the structure of your project. However, a common practice is to place parsing logic in a separate module or package, such as a `parsers` module or a `utils` package.
+GitHub Copilot: 
+---
+The location of the parsing logic depends on the specific use case and the structure of your project. However, a common practice is to place parsing logic in a separate module or package, such as a `parsers` module or a `utils` package.
 
 If the parsing logic is specific to a certain API or data source, it may make sense to place it in a separate module or package that is named after the API or data source. For example, if you have multiple APIs that require parsing, you could create a `parsers` package with sub-packages for each API.
 
@@ -52,9 +60,13 @@ On the other hand, if the parsing logic is more general and can be reused across
 
 In general, the goal is to keep your code organized and modular, so that it is easy to maintain and extend.
 
-ddomin212: how do i separate my routes into multiple files in FastAPI
+Daniel Dominko: 
+---
+how do i separate my routes into multiple files in FastAPI
 
-GitHub Copilot: To separate your routes into multiple files in FastAPI, you can follow these steps:
+GitHub Copilot: 
+---
+To separate your routes into multiple files in FastAPI, you can follow these steps:
 
 1. Create a new Python module for each group of related routes. For example, you could create a `weather.py` module for all the weather-related routes.
 
@@ -114,9 +126,13 @@ app.include_router(weather_app)
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: do i have to initalize all the middleware for the various apps outside the main file again?
+Daniel Dominko: 
+---
+do i have to initalize all the middleware for the various apps outside the main file again?
 
-GitHub Copilot: It depends on how you have structured your application. 
+GitHub Copilot: 
+---
+It depends on how you have structured your application. 
 
 If you have defined all the middleware for the various apps in the main file, then you don't need to initialize them again outside the main file. You can simply import the main app instance and include the routers for the various apps using the `include_router` method.
 
@@ -126,9 +142,13 @@ In general, it's a good practice to keep the middleware for each app in a separa
 
 So, to answer your question, it depends on how you have structured your application and where you have defined the middleware for the various apps.
 
-ddomin212: how can i use the APIRouter inside my FastAPI backend?
+Daniel Dominko: 
+---
+how can i use the APIRouter inside my FastAPI backend?
 
-GitHub Copilot: You can use the `APIRouter` class to define and organize your routes in a modular way in your FastAPI backend. Here's an example of how you can use it:
+GitHub Copilot: 
+---
+You can use the `APIRouter` class to define and organize your routes in a modular way in your FastAPI backend. Here's an example of how you can use it:
 
 1. Create a new Python module for your router. For example, you could create a `router.py` module.
 
@@ -188,9 +208,13 @@ app.include_router(router)
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: do i have to initialize the middleware again for this router?
+Daniel Dominko: 
+---
+do i have to initialize the middleware again for this router?
 
-GitHub Copilot: Yes, you will need to initialize the middleware again for this router. Each instance of `FastAPI` has its own middleware stack, so you will need to add the middleware to the `app` instance in your `router.py` module.
+GitHub Copilot: 
+---
+Yes, you will need to initialize the middleware again for this router. Each instance of `FastAPI` has its own middleware stack, so you will need to add the middleware to the `app` instance in your `router.py` module.
 
 Here's an example of how you can add the `CsrfProtect` middleware to your `router.py` module:
 
@@ -224,9 +248,13 @@ Note that we are initializing the `CsrfProtect` middleware with the `app` instan
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: how do i cache a response in react
+Daniel Dominko: 
+---
+how do i cache a response in react
 
-GitHub Copilot: To cache a response in React, you can use the `useMemo` hook. The `useMemo` hook is used to memoize a value, which means that it will only be recomputed when its dependencies change.
+GitHub Copilot: 
+---
+To cache a response in React, you can use the `useMemo` hook. The `useMemo` hook is used to memoize a value, which means that it will only be recomputed when its dependencies change.
 
 Here's an example of how you can use the `useMemo` hook to cache a response:
 
@@ -264,9 +292,13 @@ We then render the cached data in the component. If the `cachedData` variable is
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: how can i cache a request in python
+Daniel Dominko: 
+---
+how can i cache a request in python
 
-GitHub Copilot: To cache a request in Python, you can use a caching library such as `requests-cache`. Here's an example of how you can use `requests-cache` to cache a request:
+GitHub Copilot: 
+---
+To cache a request in Python, you can use a caching library such as `requests-cache`. Here's an example of how you can use `requests-cache` to cache a request:
 
 ```python
 import requests_cache
@@ -288,9 +320,13 @@ Note that `requests-cache` can also be configured to use different types of cach
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: so the cache is tied to the URL or?
+Daniel Dominko: 
+---
+so the cache is tied to the URL or?
 
-GitHub Copilot: Yes, by default, the cache in `requests-cache` is tied to the URL of the request. This means that if you make the same request to the same URL again, the cached response will be returned instead of making a new request.
+GitHub Copilot: 
+---
+Yes, by default, the cache in `requests-cache` is tied to the URL of the request. This means that if you make the same request to the same URL again, the cached response will be returned instead of making a new request.
 
 However, you can also configure the cache to take into account other factors, such as the request method, headers, and query parameters. This can be useful if you want to cache responses for different variations of the same request.
 
@@ -309,9 +345,13 @@ You can also configure the cache to take into account other factors, such as the
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: can i set expiration rules differently for different URLs?
+Daniel Dominko: 
+---
+can i set expiration rules differently for different URLs?
 
-GitHub Copilot: Yes, you can set expiration rules differently for different URLs in `requests-cache`. 
+GitHub Copilot: 
+---
+Yes, you can set expiration rules differently for different URLs in `requests-cache`. 
 
 To set different expiration rules for different URLs, you can use the `cache_control` parameter of the `requests.get` method. The `cache_control` parameter allows you to set cache control directives for the request, such as the maximum age of the cached response.
 
@@ -338,9 +378,13 @@ Note that the `cache_control` parameter can also be used to set other cache cont
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: the refreshUserToken takes quite a long time to load, any ideas why?
+Daniel Dominko: 
+---
+the refreshUserToken takes quite a long time to load, any ideas why?
 
-GitHub Copilot: There could be several reasons why the `refreshUserToken` function is taking a long time to load. Here are a few possible reasons:
+GitHub Copilot: 
+---
+There could be several reasons why the `refreshUserToken` function is taking a long time to load. Here are a few possible reasons:
 
 1. Network latency: If the `refreshUserToken` function makes a network request to refresh the user token, then network latency could be a factor in the slow loading time. You can try optimizing the network request by reducing the payload size or using a faster network connection.
 
@@ -352,9 +396,13 @@ GitHub Copilot: There could be several reasons why the `refreshUserToken` functi
 
 To diagnose the issue further, you can use a profiling tool to identify the bottleneck in the `refreshUserToken` function. This will help you pinpoint the specific area of the function that is causing the slow loading time.
 
-ddomin212: would dividing the weather routes here be logical in terms of performance?
+Daniel Dominko: 
+---
+would dividing the weather routes here be logical in terms of performance?
 
-GitHub Copilot: Dividing the weather routes into separate functions or endpoints could potentially improve performance, depending on the specific use case and the amount of data being returned.
+GitHub Copilot: 
+---
+Dividing the weather routes into separate functions or endpoints could potentially improve performance, depending on the specific use case and the amount of data being returned.
 
 If the `call_api` function is returning a large amount of data, it may be more efficient to split the data into separate endpoints or functions. This can help reduce the amount of data being transferred over the network and improve the overall performance of the application.
 
@@ -364,9 +412,13 @@ However, if the amount of data being returned is relatively small and the perfor
 
 In general, the goal is to optimize the performance of the application while maintaining a logical and intuitive API design.
 
-ddomin212: how can i assure something happens only after the refreshUserTOken function has been completed?
+Daniel Dominko: 
+---
+how can i assure something happens only after the refreshUserTOken function has been completed?
 
-GitHub Copilot: To ensure that something happens only after the `refreshUserToken` function has completed, you can use the `then` method to chain a callback function to the `refreshUserToken` promise.
+GitHub Copilot: 
+---
+To ensure that something happens only after the `refreshUserToken` function has completed, you can use the `then` method to chain a callback function to the `refreshUserToken` promise.
 
 Here's an example of how you can use the `then` method to ensure that a function is called only after the `refreshUserToken` function has completed:
 
@@ -385,9 +437,13 @@ Note that the `then` method returns a new promise, so you can chain multiple `th
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: but this function does not return a promise, what then?
+Daniel Dominko: 
+---
+but this function does not return a promise, what then?
 
-GitHub Copilot: If the `refreshUserToken` function does not return a promise, you can still ensure that something happens only after the function has completed by using a callback function.
+GitHub Copilot: 
+---
+If the `refreshUserToken` function does not return a promise, you can still ensure that something happens only after the function has completed by using a callback function.
 
 Here's an example of how you can use a callback function to ensure that something happens only after the `refreshUserToken` function has completed:
 
@@ -406,9 +462,13 @@ Note that the `refreshUserToken` function must call the callback function when i
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: how do i include a js variable in jsx html
+Daniel Dominko: 
+---
+how do i include a js variable in jsx html
 
-GitHub Copilot: To include a JavaScript variable in JSX, you can use curly braces `{}` to wrap the variable name. Here's an example:
+GitHub Copilot: 
+---
+To include a JavaScript variable in JSX, you can use curly braces `{}` to wrap the variable name. Here's an example:
 
 ```javascript
 function MyComponent() {
@@ -442,9 +502,13 @@ In this example, we are including an arithmetic expression in the curly braces t
 
 I hope this helps! Let me know if you have any further questions.
 
-ddomin212: and inside a class of a div
+Daniel Dominko: 
+---
+and inside a class of a div
 
-GitHub Copilot: To include a JavaScript variable inside a class of a `div` element in JSX, you can use string interpolation with template literals. Here's an example:
+GitHub Copilot: 
+---
+To include a JavaScript variable inside a class of a `div` element in JSX, you can use string interpolation with template literals. Here's an example:
 
 ```javascript
 function MyComponent() {

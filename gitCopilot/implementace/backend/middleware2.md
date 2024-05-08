@@ -1,6 +1,10 @@
-ddomin212: how do i protect my fastapi app from CSRF using fastapi_csrf_protect
+Daniel Dominko: 
+---
+how do i protect my fastapi app from CSRF using fastapi_csrf_protect
 
-GitHub Copilot: To protect your FastAPI app from CSRF using `fastapi_csrf_protect`, you can follow these steps:
+GitHub Copilot: 
+---
+To protect your FastAPI app from CSRF using `fastapi_csrf_protect`, you can follow these steps:
 
 1. Install the `fastapi_csrf_protect` package using pip:
 

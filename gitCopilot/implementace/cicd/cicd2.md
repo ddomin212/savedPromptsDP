@@ -1,6 +1,10 @@
-ddomin212: could you give me a github actions YAML that automatically does pytest?
+Daniel Dominko: 
+---
+could you give me a github actions YAML that automatically does pytest?
 
-GitHub Copilot: Certainly! Here's an example YAML file that runs pytest on push and pull request events:
+GitHub Copilot: 
+---
+Certainly! Here's an example YAML file that runs pytest on push and pull request events:
 
 ```yaml
 name: pytest
@@ -32,9 +36,13 @@ jobs:
 
 This YAML file assumes that your code is in the `main` branch and that your dependencies are listed in a `requirements.txt` file. You may need to adjust the `python-version` and `requirements.txt` file name to match your project.
 
-ddomin212: what if i have enviroment variables that need to be filled in
+Daniel Dominko: 
+---
+what if i have enviroment variables that need to be filled in
 
-GitHub Copilot: If you have environment variables that need to be filled in, you can use the `env` key to set them in your YAML file. Here's an example:
+GitHub Copilot: 
+---
+If you have environment variables that need to be filled in, you can use the `env` key to set them in your YAML file. Here's an example:
 
 ```yaml
 name: pytest
@@ -71,9 +79,13 @@ jobs:
 
 In this example, we're setting an environment variable called `MY_ENV_VAR` using a secret called `MY_SECRET`. You can replace `MY_SECRET` with the name of your secret. Then, in the `Run pytest` step, we're using the `env` key to pass the environment variable to the pytest command. You can replace `MY_ENV_VAR` with the name of your environment variable.
 
-ddomin212: where can i set this env variable in github actions?
+Daniel Dominko: 
+---
+where can i set this env variable in github actions?
 
-GitHub Copilot: You can set environment variables in GitHub Actions using the `env` key in your workflow file. Here's an example of how to set an environment variable:
+GitHub Copilot: 
+---
+You can set environment variables in GitHub Actions using the `env` key in your workflow file. Here's an example of how to set an environment variable:
 
 ```yaml
 name: pytest
@@ -110,9 +122,13 @@ jobs:
 
 In this example, we're setting an environment variable called `MY_ENV_VAR` to the value `my_value`. You can replace `my_value` with the value you want to use. Then, in the `Run pytest` step, we're using the `env` key to pass the environment variable to the pytest command. You can access the value of the environment variable using `${{ env.MY_ENV_VAR }}`.
 
-ddomin212: should I add my variables to repository secrets or create a new enviroment for the secrets in Github Actions?
+Daniel Dominko: 
+---
+should I add my variables to repository secrets or create a new enviroment for the secrets in Github Actions?
 
-GitHub Copilot: It's generally recommended to use repository secrets to store sensitive information like API keys, passwords, and other secrets. This is because repository secrets are encrypted and only accessible to authorized users and workflows.
+GitHub Copilot: 
+---
+It's generally recommended to use repository secrets to store sensitive information like API keys, passwords, and other secrets. This is because repository secrets are encrypted and only accessible to authorized users and workflows.
 
 You can add your environment variables to repository secrets by going to your repository's settings, selecting "Secrets" from the left-hand menu, and then clicking "New repository secret". You can then enter the name and value of your secret.
 
@@ -153,9 +169,13 @@ jobs:
 
 In this example, we're setting an environment variable called `MY_SECRET` using a repository secret called `MY_SECRET`. You can replace `MY_SECRET` with the name of your secret. Then, in the `Run pytest` step, we're using the `env` key to pass the environment variable to the pytest command. You can replace `MY_SECRET` with the name of your environment variable.
 
-ddomin212: could you give me a YAML for testing a react application on GitHub Actions
+Daniel Dominko: 
+---
+could you give me a YAML for testing a react application on GitHub Actions
 
-GitHub Copilot: Certainly! Here's an example YAML file that runs tests for a React application using Jest on push and pull request events:
+GitHub Copilot: 
+---
+Certainly! Here's an example YAML file that runs tests for a React application using Jest on push and pull request events:
 
 ```yaml
 name: Jest
@@ -184,9 +204,13 @@ jobs:
 
 This YAML file assumes that your code is in the `main` branch and that your tests are run using the `npm test` command. You may need to adjust the `node-version` to match your project. If you're using a different testing framework, you'll need to adjust the `Run tests` step to use the appropriate command.
 
-ddomin212: install dependencies including dev dependencies
+Daniel Dominko: 
+---
+install dependencies including dev dependencies
 
-GitHub Copilot: To install both regular and dev dependencies, you can add the `--dev` flag to the `npm install` command. Here's an updated version of the YAML file that installs both regular and dev dependencies:
+GitHub Copilot: 
+---
+To install both regular and dev dependencies, you can add the `--dev` flag to the `npm install` command. Here's an updated version of the YAML file that installs both regular and dev dependencies:
 
 ```yaml
 name: Jest
@@ -215,9 +239,13 @@ jobs:
 
 In this example, we're using the `--dev` flag to install both regular and dev dependencies. You can replace `frontend` with the name of your branch.
 
-ddomin212: how can i run my cypress tests with github actions?
+Daniel Dominko: 
+---
+how can i run my cypress tests with github actions?
 
-GitHub Copilot: To run Cypress tests with GitHub Actions, you can use the `cypress/run` action. Here's an example YAML file that runs Cypress tests on push and pull request events:
+GitHub Copilot: 
+---
+To run Cypress tests with GitHub Actions, you can use the `cypress/run` action. Here's an example YAML file that runs Cypress tests on push and pull request events:
 
 ```yaml
 name: Cypress
@@ -255,9 +283,13 @@ In this example, we're using the `cypress-io/github-action` action to run Cypres
 
 You'll also need to set the `CYPRESS_RECORD_KEY` environment variable to your Cypress Dashboard record key. You can add this variable to your repository secrets and reference it using `${{ secrets.CYPRESS_RECORD_KEY }}`.
 
-ddomin212: but i need to run my backend in order for the tests to work or?
+Daniel Dominko: 
+---
+but i need to run my backend in order for the tests to work or?
 
-GitHub Copilot: Yes, that's correct. If your tests require a backend to be running, you'll need to start the backend before running the tests. You can do this by adding a step to your workflow that starts the backend server.
+GitHub Copilot: 
+---
+Yes, that's correct. If your tests require a backend to be running, you'll need to start the backend before running the tests. You can do this by adding a step to your workflow that starts the backend server.
 
 Here's an updated version of the YAML file that starts the backend server before running the tests:
 
@@ -299,10 +331,14 @@ In this example, we're adding two new steps to the workflow. The `Start backend 
 
 You'll need to replace `npm run start:backend` with the command that starts your backend server. You may also need to adjust the port number in the `Wait for backend server to start` step to match the port used by your backend server.
 
-ddomin212: can i run the backend inside the github action?
+Daniel Dominko: 
+---
+can i run the backend inside the github action?
 
 
-GitHub Copilot: Yes, you can run the backend inside the GitHub Actions workflow. Here's an updated version of the YAML file that runs both the frontend and backend:
+GitHub Copilot: 
+---
+Yes, you can run the backend inside the GitHub Actions workflow. Here's an updated version of the YAML file that runs both the frontend and backend:
 
 ```yaml
 name: Jest
@@ -348,9 +384,13 @@ In this example, we're adding two new steps to the workflow. The `Start backend`
 
 You'll need to replace `npm run start:backend` with the command that starts your backend server, and replace `npm start` with the command that starts your frontend server. You may also need to adjust the port numbers in the `Wait for backend to start` and `Wait for frontend to start` steps to match the ports used by your servers.
 
-ddomin212: what if my backend and frontend are located inside different branches?
+Daniel Dominko: 
+---
+what if my backend and frontend are located inside different branches?
 
-GitHub Copilot: If your frontend and backend are located in different branches, you can modify the `on` section of the YAML file to specify the branches for each component. Here's an example YAML file that runs tests for a React frontend and a Node.js backend located in different branches:
+GitHub Copilot: 
+---
+If your frontend and backend are located in different branches, you can modify the `on` section of the YAML file to specify the branches for each component. Here's an example YAML file that runs tests for a React frontend and a Node.js backend located in different branches:
 
 ```yaml
 name: Jest
@@ -388,9 +428,13 @@ In this example, we're using the `on` section to specify that the workflow shoul
 
 Note that if your frontend and backend are located in different repositories, you'll need to create separate workflows for each repository.
 
-ddomin212: but i need to run my end to end using both branches at once
+Daniel Dominko: 
+---
+but i need to run my end to end using both branches at once
 
-GitHub Copilot: If you need to run end-to-end tests that require both the frontend and backend to be running, you can modify the workflow to check out both branches and start both servers. Here's an example YAML file that checks out both the `frontend` and `backend` branches and starts both servers before running the tests:
+GitHub Copilot: 
+---
+If you need to run end-to-end tests that require both the frontend and backend to be running, you can modify the workflow to check out both branches and start both servers. Here's an example YAML file that checks out both the `frontend` and `backend` branches and starts both servers before running the tests:
 
 ```yaml
 name: End-to-end tests
@@ -458,9 +502,13 @@ The `Start frontend` step starts the frontend server using the `npm start` comma
 
 The `Run tests` step runs the end-to-end tests using the `npm run test:e2e` command. You'll need to replace `npm run test:e2e` with the command that runs your end-to-end tests.
 
-ddomin212: my backend is running fastapi on python, could you modify the code accordingly?
+Daniel Dominko: 
+---
+my backend is running fastapi on python, could you modify the code accordingly?
 
-GitHub Copilot: Sure, here's an updated version of the YAML file that runs both the React frontend and FastAPI backend:
+GitHub Copilot: 
+---
+Sure, here's an updated version of the YAML file that runs both the React frontend and FastAPI backend:
 
 ```yaml
 name: End-to-end tests

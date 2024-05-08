@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Based on the provided code, here are some refactoring tips:
+GitHub Copilot: 
+---
+Based on the provided code, here are some refactoring tips:
 
 1. **Use `beforeEach` to avoid repetition**: You are repeating the `const zone` and `const secs` in each test. You can use `beforeEach` to declare these variables once and use them in each test.
 
@@ -59,9 +63,13 @@ describe("timeUtils", () => {
 
 Remember, the goal of refactoring is to make the code more readable and maintainable without changing its behavior.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code you've provided is well-aligned with the latest ECMAScript (ES) standards. Here are some specific points:
+GitHub Copilot: 
+---
+The code you've provided is well-aligned with the latest ECMAScript (ES) standards. Here are some specific points:
 
 1. **Import/Export Statements**: You're using ES6 module syntax (`import`/`export`) which is the latest standard for handling modules in JavaScript.
 
@@ -75,9 +83,13 @@ GitHub Copilot: The code you've provided is well-aligned with the latest ECMAScr
 
 Remember, using the latest ES standards can make your code more readable and efficient, but it's also important to ensure that your target environment supports these features. If you're targeting older browsers, you may need to use a tool like Babel to transpile your code to an older version of JavaScript.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current code is already quite readable and adheres to modern JavaScript (ES6+) standards. However, there are a few minor improvements that could be made for readability and performance:
+GitHub Copilot: 
+---
+The current code is already quite readable and adheres to modern JavaScript (ES6+) standards. However, there are a few minor improvements that could be made for readability and performance:
 
 1. **Use `beforeEach` to avoid repetition**: You are repeating the `const secs` in each test. You can use `beforeEach` to declare these variables once and use them in each test.
 
@@ -136,9 +148,13 @@ describe("timeUtils", () => {
 
 Remember, the goal of refactoring is to make the code more readable and maintainable without changing its behavior.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The provided code is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The provided code is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **SOLID**: This principle is more applicable to object-oriented programming, and your code doesn't seem to have any classes or objects. However, the Single Responsibility Principle (the "S" in SOLID) is applicable here. Each of your functions seems to have a single responsibility, which is good.
 
@@ -203,9 +219,13 @@ describe("timeUtils", () => {
 
 Remember, the goal of these principles is to make your code more readable, maintainable, and scalable.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good example of a test module. It's using the Jest testing framework, and it's testing two functions: `formatToLocalTime` and `calcOffset`. Each function has its own `describe` block, and each test case is clearly defined with the `it` function. This is a good practice as it makes the tests organized and easy to read.
+GitHub Copilot: 
+---
+The current module is a good example of a test module. It's using the Jest testing framework, and it's testing two functions: `formatToLocalTime` and `calcOffset`. Each function has its own `describe` block, and each test case is clearly defined with the `it` function. This is a good practice as it makes the tests organized and easy to read.
 
 However, there are a few areas that could be improved:
 

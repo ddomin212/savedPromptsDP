@@ -1,6 +1,10 @@
-ddomin212: could you give me refactoring tips for the buyPremium tests?
+Daniel Dominko: 
+---
+could you give me refactoring tips for the buyPremium tests?
 
-GitHub Copilot: Sure! Here are some refactoring tips for the `buyPremium` tests:
+GitHub Copilot: 
+---
+Sure! Here are some refactoring tips for the `buyPremium` tests:
 
 1. Use `beforeAll` instead of `beforeEach` to reset the mocks only once before all tests run.
 2. Use `fetch.mock.calls` to check the number of times `fetch` was called instead of `fetch.mock.calls.length`.
@@ -55,9 +59,13 @@ describe("buyPremium", () => {
 
 Let me know if you have any questions or need further assistance!
 
-ddomin212: could you give me refactoring tips for all the tests inside authService.test.js
+Daniel Dominko: 
+---
+could you give me refactoring tips for all the tests inside authService.test.js
 
-GitHub Copilot: Sure! Here are some refactoring tips for the tests inside `authService.test.js`:
+GitHub Copilot: 
+---
+Sure! Here are some refactoring tips for the tests inside `authService.test.js`:
 
 1. Use `beforeAll` instead of `beforeEach` to reset the mocks only once before all tests run.
 2. Use `fetch.mock.calls` to check the number of times `fetch` was called instead of `fetch.mock.calls.length`.
@@ -134,9 +142,13 @@ describe("authService", () => {
 
 Let me know if you have any questions or need further assistance!
 
-ddomin212: how can I refactor the getWeatherData test?
+Daniel Dominko: 
+---
+how can I refactor the getWeatherData test?
 
-GitHub Copilot: Here are some refactoring tips for the `getWeatherData` test:
+GitHub Copilot: 
+---
+Here are some refactoring tips for the `getWeatherData` test:
 
 1. Use `beforeAll` instead of `beforeEach` to reset the mocks only once before all tests run.
 2. Use `fetch.mock.calls` to check the number of times `fetch` was called instead of `fetch.mock.calls.length`.

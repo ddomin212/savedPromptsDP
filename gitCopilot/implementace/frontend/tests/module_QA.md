@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for the AirQuality component?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for the AirQuality component?
 
-GitHub Copilot: Sure! Here are some refactoring tips for the `AirQuality` component:
+GitHub Copilot: 
+---
+Sure! Here are some refactoring tips for the `AirQuality` component:
 
 1. Extract the `AirQualityMetrics` component to a separate file.
 2. Use destructuring to simplify the code in the `AirQuality` component.
@@ -58,9 +62,13 @@ export default AirQuality;
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: Could you give me refactoring tips for the ChartView component?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for the ChartView component?
 
-GitHub Copilot: Sure! Here are some refactoring tips for the `ChartView` component:
+GitHub Copilot: 
+---
+Sure! Here are some refactoring tips for the `ChartView` component:
 
 1. Extract the chart values calculation to a separate function.
 2. Use a switch statement instead of an if-else chain to set the `chartValues`.
@@ -137,9 +145,13 @@ export default ChartView;
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: How can I optimize the performance of the ChartView component?
+Daniel Dominko: 
+---
+How can I optimize the performance of the ChartView component?
 
-GitHub Copilot: One way to optimize the performance of the `ChartView` component is to use memoization to prevent unnecessary re-renders. Here are some steps you can take:
+GitHub Copilot: 
+---
+One way to optimize the performance of the `ChartView` component is to use memoization to prevent unnecessary re-renders. Here are some steps you can take:
 
 1. Memoize the `chartValues` calculation using the `useMemo` hook.
 2. Memoize the `setXYValuesCallback` function using the `useCallback` hook.
@@ -221,9 +233,13 @@ export default ChartView;
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: Would you say the ChartView component adheres to principles of clean code, such as SOLID, KISS or DRY? How could I improve it?
+Daniel Dominko: 
+---
+Would you say the ChartView component adheres to principles of clean code, such as SOLID, KISS or DRY? How could I improve it?
 
-GitHub Copilot: The `ChartView` component seems to adhere to some principles of clean code, such as the Single Responsibility Principle (SRP) and the Keep It Simple, Stupid (KISS) principle. However, there are some areas where it could be improved:
+GitHub Copilot: 
+---
+The `ChartView` component seems to adhere to some principles of clean code, such as the Single Responsibility Principle (SRP) and the Keep It Simple, Stupid (KISS) principle. However, there are some areas where it could be improved:
 
 1. The `calculateXYValues` function could be extracted to a separate file to improve the SRP and make it more reusable.
 2. The `chartValues` calculation could be memoized using the `useMemo` hook to improve performance.
@@ -333,9 +349,13 @@ export default ChartView;
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: Does the ChartView component adhere to ES6 standards?
+Daniel Dominko: 
+---
+Does the ChartView component adhere to ES6 standards?
 
-GitHub Copilot: Yes, the `ChartView` component adheres to ES6 standards. It uses features such as arrow functions, destructuring, template literals, and the spread operator. Here are some examples:
+GitHub Copilot: 
+---
+Yes, the `ChartView` component adheres to ES6 standards. It uses features such as arrow functions, destructuring, template literals, and the spread operator. Here are some examples:
 
 1. Arrow functions are used for function expressions:
 
@@ -424,9 +444,13 @@ const ChartView = ({ items, selectedOption, timeInterval, units }) => {
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: Is the ChartView component easily testable?
+Daniel Dominko: 
+---
+Is the ChartView component easily testable?
 
-GitHub Copilot: Yes, the `ChartView` component seems to be easily testable. It has a clear separation of concerns, with the chart rendering logic in the `Chart` component and the data fetching and processing logic in the `useYearlyData` and `useDailyData` hooks. Here are some ways you could test the `ChartView` component:
+GitHub Copilot: 
+---
+Yes, the `ChartView` component seems to be easily testable. It has a clear separation of concerns, with the chart rendering logic in the `Chart` component and the data fetching and processing logic in the `useYearlyData` and `useDailyData` hooks. Here are some ways you could test the `ChartView` component:
 
 1. Test that the component renders without errors:
 
@@ -513,9 +537,13 @@ test("passes correct props to Chart component", () => {
 
 I hope this helps! Let me know if you have any questions.
 
-ddomin212: Are you sure there are not any improvments to the testability of the ChartView component?
+Daniel Dominko: 
+---
+Are you sure there are not any improvments to the testability of the ChartView component?
 
-GitHub Copilot: I apologize for the oversight in my previous response. While the `ChartView` component is relatively easy to test, there are some improvements that could be made to make it even more testable:
+GitHub Copilot: 
+---
+I apologize for the oversight in my previous response. While the `ChartView` component is relatively easy to test, there are some improvements that could be made to make it even more testable:
 
 1. Extract the `setXYValuesCallback` function to a separate file and export it for testing. This would allow you to test the function in isolation without having to render the entire component.
 

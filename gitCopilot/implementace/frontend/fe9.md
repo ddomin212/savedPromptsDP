@@ -1,6 +1,10 @@
-ddomin212: do you have any tips for refactoring this react component?
+Daniel Dominko: 
+---
+do you have any tips for refactoring this react component?
 
-GitHub Copilot: Sure, here are some tips for refactoring the `SunStats` component:
+GitHub Copilot: 
+---
+Sure, here are some tips for refactoring the `SunStats` component:
 
 1. Extract the `SunStat` component into its own file for better organization and reusability.
 2. Use destructuring to simplify the `SunStats` function signature and improve readability.

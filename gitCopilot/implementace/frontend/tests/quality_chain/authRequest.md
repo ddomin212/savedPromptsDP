@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the current module:
 
 1. **DRY (Don't Repeat Yourself) Principle**: There is a lot of repeated code in the test cases. You could create a helper function to handle the common parts of the tests. For example, the `fetch.mock.calls` assertions are repeated in each test. You could create a helper function that takes the expected values as parameters and performs these assertions.
 
@@ -67,9 +71,13 @@ describe("authService", () => {
 
 Please note that these are just suggestions and the actual refactoring might depend on the specifics of your code and requirements.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features used:
+GitHub Copilot: 
+---
+The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features used:
 
 1. **Import/Export Statements (ES6)**: The `import` and `export` statements are used for module imports and exports, which is a feature introduced in ES6.
 
@@ -85,9 +93,13 @@ GitHub Copilot: The code in the current module aligns well with the latest ECMAS
 
 In conclusion, the code is modern and aligns well with the latest ES standards. However, without seeing the implementation of the `authRequest`, `signInUser`, and `signOutUser` functions, it's hard to provide a complete analysis.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and adheres to modern JavaScript (ES6+) standards. However, there are a few minor changes that could potentially improve readability:
+GitHub Copilot: 
+---
+The current module is already quite readable and adheres to modern JavaScript (ES6+) standards. However, there are a few minor changes that could potentially improve readability:
 
 1. **Extract Repeated Values**: The URL "http://0.0.0.0:8000" and headers are repeated in each test. You could define them as constants at the top of your test file and use these constants in your tests.
 
@@ -155,9 +167,13 @@ describe("authService", () => {
 
 Please note that these changes are unlikely to have a significant impact on performance, as they are primarily aimed at improving readability. The performance of your tests is more likely to be affected by the speed of your `fetch` calls, which is outside the control of your test code.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **SOLID**: This principle is more applicable to class-based object-oriented programming, and your module seems to be using functional programming. However, the Single Responsibility Principle (the "S" in SOLID) is still relevant. Each of your test functions has a single responsibility, which is to test a specific function under specific conditions.
 
@@ -194,9 +210,13 @@ assertFetchCall(
 
 This reduces repetition and makes your tests DRYer. It also makes your tests easier to read and maintain, because you have a single place to change the assertion logic if needed.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a well-structured test module. It uses the `describe` and `it` functions from Jest to organize tests into groups and provide clear descriptions of what each test is supposed to do. The `beforeEach` function is used to reset the `fetch` mock before each test, ensuring that tests do not interfere with each other. Here are some areas of improvement:
+GitHub Copilot: 
+---
+The current module is a well-structured test module. It uses the `describe` and `it` functions from Jest to organize tests into groups and provide clear descriptions of what each test is supposed to do. The `beforeEach` function is used to reset the `fetch` mock before each test, ensuring that tests do not interfere with each other. Here are some areas of improvement:
 
 1. **Test Descriptions**: The descriptions for the tests are clear, but they could be more specific. For example, the description for the `authRequest` test could specify that it's testing a POST request to the `/auth` endpoint.
 

@@ -1,14 +1,22 @@
-ddomin212: @workspace /new  Give me a project that uses FastAPI on the backend and React on the frontned for a simple application that shows the weather, along with the current forecast
+Daniel Dominko: 
+---
+@workspace /new  Give me a project that uses FastAPI on the backend and React on the frontned for a simple application that shows the weather, along with the current forecast
 
-GitHub Copilot: Sure, here's a proposed directory structure for a FastAPI backend and React frontend application:
+GitHub Copilot: 
+---
+Sure, here's a proposed directory structure for a FastAPI backend and React frontend application:
 
 
 
 
 
-ddomin212: how can i run a FastAPI backend
+Daniel Dominko: 
+---
+how can i run a FastAPI backend
 
-GitHub Copilot: To run a FastAPI application, you need to use an ASGI server, such as Uvicorn or Hypercorn. Here's how you can do it with Uvicorn:
+GitHub Copilot: 
+---
+To run a FastAPI application, you need to use an ASGI server, such as Uvicorn or Hypercorn. Here's how you can do it with Uvicorn:
 
 1. First, install Uvicorn using pip. Open your terminal and run:
 
@@ -32,13 +40,17 @@ The `--reload` flag enables hot reloading, which means the server will automatic
 
 Your FastAPI application should now be running at `http://localhost:8000`.
 
-ddomin212: can you fix this error? """opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+Daniel Dominko: 
+---
+can you fix this error? """opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
   library: 'digital envelope routines',
   reason: 'unsupported',
   code: 'ERR_OSSL_EVP_UNSUPPORTED'
 }"""
 
-GitHub Copilot: This error is typically caused by a mismatch between the version of Node.js you're using and the version required by the packages in your project. The error message `ERR_OSSL_EVP_UNSUPPORTED` suggests that some OpenSSL features are not supported by your current Node.js version.
+GitHub Copilot: 
+---
+This error is typically caused by a mismatch between the version of Node.js you're using and the version required by the packages in your project. The error message `ERR_OSSL_EVP_UNSUPPORTED` suggests that some OpenSSL features are not supported by your current Node.js version.
 
 Here's how you can fix this:
 
@@ -64,9 +76,13 @@ npm install
 
 This should resolve the error. If it persists, it might be due to a specific package in your project that's incompatible with the latest Node.js version. In that case, you'll need to identify and update that package.
 
-ddomin212: @workspace /fix I am getting this error while trying to run my Python backend """ValueError: 'not' is not a valid parameter name""", any ideas on how to fix it?
+Daniel Dominko: 
+---
+@workspace /fix I am getting this error while trying to run my Python backend """ValueError: 'not' is not a valid parameter name""", any ideas on how to fix it?
 
-GitHub Copilot: The error message suggests that you're using 'not' as a parameter name in a function or method, which is not allowed because 'not' is a reserved keyword in Python. 
+GitHub Copilot: 
+---
+The error message suggests that you're using 'not' as a parameter name in a function or method, which is not allowed because 'not' is a reserved keyword in Python. 
 
 Without seeing the actual code, I can't provide a specific fix, but here's a general solution:
 

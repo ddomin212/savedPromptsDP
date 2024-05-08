@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: The code you've provided is well-structured and follows good practices for writing unit tests in React with Jest and the React Testing Library. However, there are a few minor improvements that could be made:
+GitHub Copilot: 
+---
+The code you've provided is well-structured and follows good practices for writing unit tests in React with Jest and the React Testing Library. However, there are a few minor improvements that could be made:
 
 1. **DRY (Don't Repeat Yourself) principle**: You're rendering the `SignInButton` component in both test cases with almost the same props. You could create a helper function to do this.
 
@@ -51,9 +55,13 @@ describe("SignInButton", () => {
 
 This refactoring makes the code more maintainable and the tests clearer.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code you've provided is written in modern JavaScript and aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features used:
+GitHub Copilot: 
+---
+The code you've provided is written in modern JavaScript and aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features used:
 
 1. **ES6 Modules**: The `import` and `export` statements are used for working with modules.
 
@@ -71,9 +79,13 @@ GitHub Copilot: The code you've provided is written in modern JavaScript and ali
 
 Remember, the latest ES standards include many more features, but not all of them are used in every codebase. The features you use will depend on your specific needs and the complexity of your project.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The provided code is already quite readable and follows good practices for writing unit tests in React with Jest and the React Testing Library. However, there are a few minor improvements that could be made:
+GitHub Copilot: 
+---
+The provided code is already quite readable and follows good practices for writing unit tests in React with Jest and the React Testing Library. However, there are a few minor improvements that could be made:
 
 1. **DRY (Don't Repeat Yourself) principle**: You're rendering the `SignInButton` component in both test cases with almost the same props. You could create a helper function to do this.
 
@@ -124,9 +136,13 @@ describe("SignInButton", () => {
 
 This refactoring makes the code more maintainable and the tests clearer. As for performance, the changes won't have a significant impact because the performance of tests is more dependent on the code being tested rather than the test code itself.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The provided code is quite clean and well-structured. Here's how it aligns with some of the principles you mentioned:
+GitHub Copilot: 
+---
+The provided code is quite clean and well-structured. Here's how it aligns with some of the principles you mentioned:
 
 1. **SOLID**: This principle is more applicable to class-based object-oriented programming, and your code is functional. However, the Single Responsibility Principle (SRP) is applicable here. Each test has a single responsibility, which is to test one specific functionality.
 
@@ -183,9 +199,13 @@ describe("SignInButton", () => {
 
 This refactoring makes the code more maintainable and the tests clearer.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: Without the actual test code, it's hard to provide a specific rating or detailed feedback. However, here are some general principles of good tests that you can use to evaluate your test module:
+GitHub Copilot: 
+---
+Without the actual test code, it's hard to provide a specific rating or detailed feedback. However, here are some general principles of good tests that you can use to evaluate your test module:
 
 1. **Clear**: Each test should have a clear purpose and it should be easy to understand what is being tested.
 

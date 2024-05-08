@@ -1,6 +1,10 @@
-ddomin212: could you give me a list of exceptions for the payment route that is should handle?
+Daniel Dominko: 
+---
+could you give me a list of exceptions for the payment route that is should handle?
 
-GitHub Copilot: Sure! Here are some exceptions that the `handle_exception` decorator in the `create_checkout_session` route could handle:
+GitHub Copilot: 
+---
+Sure! Here are some exceptions that the `handle_exception` decorator in the `create_checkout_session` route could handle:
 
 - `stripe.error.StripeError`: This is a base class for all Stripe-related exceptions. It could be raised if there is an issue with the Stripe API.
 - `auth.InvalidTokenError`: This could be raised if the authentication token provided in the request is invalid or expired.
@@ -9,9 +13,13 @@ GitHub Copilot: Sure! Here are some exceptions that the `handle_exception` decor
 
 Let me know if you need more information!
 
-ddomin212: could you modify the route code accordingly
+Daniel Dominko: 
+---
+could you modify the route code accordingly
 
-GitHub Copilot: Sure! Here's an updated version of the `create_checkout_session` route that includes exception handling for the exceptions I mentioned earlier:
+GitHub Copilot: 
+---
+Sure! Here's an updated version of the `create_checkout_session` route that includes exception handling for the exceptions I mentioned earlier:
 
 ```python
 @handle_exception
@@ -47,15 +55,23 @@ async def create_checkout_session(authToken: AuthToken):
 
 Let me know if you have any questions!
 
-ddomin212: could you tell me which exceptions I am not checking for inside this function?
+Daniel Dominko: 
+---
+could you tell me which exceptions I am not checking for inside this function?
 
-GitHub Copilot: I'm sorry, but I cannot see the entire codebase and the imported modules, so I cannot say for certain which exceptions are not being handled in this function. However, based on the code you provided, I can see that there is no `try-except` block in the `get_historical_data` function, so any exceptions that occur during the execution of this function will not be caught and handled. 
+GitHub Copilot: 
+---
+I'm sorry, but I cannot see the entire codebase and the imported modules, so I cannot say for certain which exceptions are not being handled in this function. However, based on the code you provided, I can see that there is no `try-except` block in the `get_historical_data` function, so any exceptions that occur during the execution of this function will not be caught and handled. 
 
 It's generally a good practice to include exception handling in your code to gracefully handle errors and prevent your application from crashing. I would recommend adding a `try-except` block to the `get_historical_data` function to handle any exceptions that may occur during its execution.
 
-ddomin212: how can i return res.json along with the status code in javasript fetch
+Daniel Dominko: 
+---
+how can i return res.json along with the status code in javasript fetch
 
-GitHub Copilot: You can return both the response body and the status code in a JavaScript `fetch` request by chaining the `json()` method to the response object and returning an object that contains both the response data and the status code. Here's an example:
+GitHub Copilot: 
+---
+You can return both the response body and the status code in a JavaScript `fetch` request by chaining the `json()` method to the response object and returning an object that contains both the response data and the status code. Here's an example:
 
 ```javascript
 fetch('/api/data')
@@ -75,9 +91,13 @@ In this example, the `fetch` request is made to the `/api/data` endpoint. The `t
 
 I hope that helps! Let me know if you have any further questions.
 
-ddomin212: you cannot access fetch in te second then statement
+Daniel Dominko: 
+---
+you cannot access fetch in te second then statement
 
-GitHub Copilot: You're right, I apologize for the confusion. Here's an updated example that correctly returns the response data and status code:
+GitHub Copilot: 
+---
+You're right, I apologize for the confusion. Here's an updated example that correctly returns the response data and status code:
 
 ```javascript
 fetch('/api/data')
@@ -98,9 +118,13 @@ In this example, the `json()` method is called on the response object inside the
 
 I hope this clears things up! Let me know if you have any further questions.
 
-ddomin212: TrutedHost middleware does not work even though i send the right adress
+Daniel Dominko: 
+---
+TrutedHost middleware does not work even though i send the right adress
 
-GitHub Copilot: If the TrustedHostMiddleware is not working even though you are sending the correct address, there could be a few reasons why this is happening. Here are some things you can check:
+GitHub Copilot: 
+---
+If the TrustedHostMiddleware is not working even though you are sending the correct address, there could be a few reasons why this is happening. Here are some things you can check:
 
 1. Make sure that the middleware is properly installed and added to your middleware stack. You can do this by checking your `settings.py` file to see if the middleware is included in the `MIDDLEWARE` list.
 

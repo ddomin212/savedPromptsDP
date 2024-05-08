@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the test functions in your current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the test functions in your current module:
 
 1. **DRY (Don't Repeat Yourself):** You have some repeated code in your tests. For instance, the `render` function and the `select1` and `select2` constants are the same in both tests. You could move these to a `beforeEach` block to avoid repetition.
 
@@ -51,9 +55,13 @@ describe("SelectOptions", () => {
 
 Remember, the goal of refactoring is to make code cleaner and easier to understand, while keeping its behavior the same. Always run your tests after refactoring to make sure you haven't accidentally changed anything!
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some specific points:
+GitHub Copilot: 
+---
+The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some specific points:
 
 1. **Import/Export Statements:** The code uses `import` and `export` statements, which are part of ES6 and later.
 
@@ -71,9 +79,13 @@ GitHub Copilot: The code in the current module aligns well with the latest ECMAS
 
 In summary, the code is modern and aligns well with the latest ES standards. However, there are always more features you could use if they're appropriate for your code.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and adheres to modern JavaScript (ES6+) syntax. However, there are a few minor changes you could make to improve readability and maintainability:
+GitHub Copilot: 
+---
+The current module is already quite readable and adheres to modern JavaScript (ES6+) syntax. However, there are a few minor changes you could make to improve readability and maintainability:
 
 1. **Destructuring `screen`:** You can destructure the `screen` object to get the `getByTestId` and `getByText` functions. This will make your code a bit cleaner.
 
@@ -155,9 +167,13 @@ describe("SelectOptions", () => {
 
 As for performance, the changes in your test code won't have a significant impact. The performance of your tests is more likely to be affected by how your components are written, not the tests themselves.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **SOLID:** This principle is more applicable to class-based object-oriented programming, and your current module is a functional component in React. However, the Single Responsibility Principle (the "S" in SOLID) is still relevant. Each of your tests has a single responsibility, which is good.
 
@@ -206,9 +222,13 @@ describe("SelectOptions", () => {
 
 Remember, the goal of these principles is to make your code cleaner, easier to understand, and easier to maintain. Always run your tests after refactoring to make sure you haven't accidentally changed anything!
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good start for testing the `SelectOptions` component. However, there are a few areas that could be improved:
+GitHub Copilot: 
+---
+The current module is a good start for testing the `SelectOptions` component. However, there are a few areas that could be improved:
 
 1. **Assertions:** In the first test, you're not actually asserting that the elements exist. You're just referencing them. You should use `.toBeInTheDocument()` to assert that they exist.
 

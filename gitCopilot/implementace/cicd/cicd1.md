@@ -1,6 +1,10 @@
-ddomin212: could you give me a github action that will first run the flaskapi backend in the "backend" folder, then run the React frontend in the "frontend" folder, and then run cypress e2e tests?
+Daniel Dominko: 
+---
+could you give me a github action that will first run the flaskapi backend in the "backend" folder, then run the React frontend in the "frontend" folder, and then run cypress e2e tests?
 
-GitHub Copilot: Certainly! Here's an example GitHub Action that should do what you're asking for:
+GitHub Copilot: 
+---
+Certainly! Here's an example GitHub Action that should do what you're asking for:
 
 ```yaml
 name: Run backend, frontend, and e2e tests

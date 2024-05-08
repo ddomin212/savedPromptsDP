@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the current module:
 
 1. **Use of Constants:** You have hard-coded HTTP status codes (200, 400) and string messages ("Error in firebase: INVALID_ID_TOKEN", "Refresh successful", etc.) in your tests. It would be better to define these as constants at the top of your file or in a separate constants file. This way, if these values need to change, you only have to change them in one place.
 
@@ -18,9 +22,13 @@ GitHub Copilot: Sure, here are some refactoring tips for the functions in the cu
 
 Remember, the goal of refactoring is to make the code cleaner and easier to maintain, without changing its behavior. Always make sure your tests still pass after refactoring!
 
-ddomin212: How can i perform parametrized testing in pytest?
+Daniel Dominko: 
+---
+How can i perform parametrized testing in pytest?
 
-GitHub Copilot: In pytest, you can use the `@pytest.mark.parametrize` decorator to perform parameterized testing. This allows you to run a test function multiple times with different arguments. 
+GitHub Copilot: 
+---
+In pytest, you can use the `@pytest.mark.parametrize` decorator to perform parameterized testing. This allows you to run a test function multiple times with different arguments. 
 
 In your case, you can use parameterized testing to test the `/login` and `/refresh` endpoints with different tokens. Here's how you can refactor the `test_login` and `test_refresh` functions:
 
@@ -73,9 +81,13 @@ In this example, `pytest.mark.parametrize` is used to specify different combinat
 
 Please replace `"valid_jwt_token_here"` and `"valid_refresh_token_here"` with your actual valid JWT token and refresh token.
 
-ddomin212: How well does the code in the current module align to PEP standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to PEP standards?
 
-GitHub Copilot: The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
+GitHub Copilot: 
+---
+The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
 
 1. **Indentation:** The code uses 4 spaces for indentation, which is recommended by PEP 8.
 
@@ -99,9 +111,13 @@ However, there are a few areas that could be improved:
 
 Remember, while PEP 8 provides a set of guidelines for writing Python code, they are just that - guidelines. It's important to use your best judgement, and in some cases, it may make sense to deviate from the guidelines.
 
-ddomin212: Could i use different Python syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different Python syntax to make the current module more performant or readable?
 
-GitHub Copilot: The code you've provided is already quite readable and follows good practices. However, there are a few changes you could make to improve readability and maintainability:
+GitHub Copilot: 
+---
+The code you've provided is already quite readable and follows good practices. However, there are a few changes you could make to improve readability and maintainability:
 
 1. **Use Constants:** You have hard-coded HTTP status codes (200, 400) and string messages ("Error in firebase: INVALID_ID_TOKEN", "Refresh successful", etc.) in your tests. It would be better to define these as constants at the top of your file or in a separate constants file. This way, if these values need to change, you only have to change them in one place.
 
@@ -119,9 +135,13 @@ GitHub Copilot: The code you've provided is already quite readable and follows g
 
 Remember, the goal of refactoring is to make the code cleaner and easier to maintain, without changing its behavior. Always make sure your tests still pass after refactoring!
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and follows many good practices. Here's a breakdown in terms of the principles you mentioned:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and follows many good practices. Here's a breakdown in terms of the principles you mentioned:
 
 1. **SOLID:** SOLID principles are more applicable to object-oriented programming, and your code is procedural. However, the Single Responsibility Principle is applicable here. Each of your test functions is responsible for testing a single endpoint, which is good.
 
@@ -145,9 +165,13 @@ Here are some tips for improving the adherence of your code to these principles:
 
 Remember, the goal of refactoring is to make the code cleaner and easier to maintain, without changing its behavior. Always make sure your tests still pass after refactoring!
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The test module you've provided is generally well-structured and follows many good practices of writing tests. Here are some observations:
+GitHub Copilot: 
+---
+The test module you've provided is generally well-structured and follows many good practices of writing tests. Here are some observations:
 
 1. **Positive and Negative Tests:** The tests cover both successful (positive) and unsuccessful (negative) scenarios, which is good. It's important to test not only the "happy path" but also the "unhappy path".
 

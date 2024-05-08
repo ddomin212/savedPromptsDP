@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the current module:
 
 1. **Use of Constants:** You have some hardcoded strings like "http://localhost:3000/", "invalid_jwt_token_here", "INVALID_ID_TOKEN", etc. These could be moved to a constants file or at the top of your test file. This makes it easier to manage and change these values in the future.
 
@@ -51,9 +55,13 @@ def test_create_payment_session(test_app, additional_params, auth_client):
 
 Remember, the goal of refactoring is to make the code cleaner and easier to understand, while keeping its behavior the same. Always make sure your tests still pass after refactoring.
 
-ddomin212: How well does the code in the current module align to PEP standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to PEP standards?
 
-GitHub Copilot: The code you've provided generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
+GitHub Copilot: 
+---
+The code you've provided generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
 
 1. **Imports:** The imports are at the top of the file, which is correct according to PEP 8.
 
@@ -73,9 +81,13 @@ However, there are a few areas where the code could be improved to better align 
 
 Remember, PEP 8 is a guide, not a rulebook. It's important to follow it for consistency and readability, but there are times when it's okay to break the rules if it makes the code more readable.
 
-ddomin212: Could i use different Python syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different Python syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and performant, but there are a few changes you could make to improve readability:
+GitHub Copilot: 
+---
+The current module is already quite readable and performant, but there are a few changes you could make to improve readability:
 
 1. **Use Constants:** You have some hardcoded strings like "http://localhost:3000/", "invalid_jwt_token_here", "INVALID_ID_TOKEN", etc. These could be moved to a constants file or at the top of your test file. This makes it easier to manage and change these values in the future.
 
@@ -120,9 +132,13 @@ def test_create_payment_session(test_app, additional_params, auth_client):
 
 Remember, the goal of refactoring is to make the code cleaner and easier to understand, while keeping its behavior the same. Always make sure your tests still pass after refactoring.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is generally clean and adheres to many good practices. Here's a breakdown according to the principles you mentioned:
+GitHub Copilot: 
+---
+The code in the current module is generally clean and adheres to many good practices. Here's a breakdown according to the principles you mentioned:
 
 1. **SOLID:** The Single Responsibility Principle (SRP) is followed as each function has a single responsibility: testing a specific aspect of the payment process. However, the Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles are not directly applicable here as they are more relevant to class-based object-oriented programming.
 
@@ -146,9 +162,13 @@ Here are some tips to improve the code:
 
 5. **Error Handling:** Consider adding more error handling in your tests. For example, you could add checks to ensure that the responses are not null before trying to access their properties.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good start for testing the payment functionality of your application. It covers both positive and negative scenarios, which is a good practice. Here are some observations:
+GitHub Copilot: 
+---
+The current module is a good start for testing the payment functionality of your application. It covers both positive and negative scenarios, which is a good practice. Here are some observations:
 
 1. **Positive and Negative Scenarios:** The tests cover both successful and unsuccessful cases, which is good. It's important to test not only the "happy path" but also the edge cases and failure scenarios.
 

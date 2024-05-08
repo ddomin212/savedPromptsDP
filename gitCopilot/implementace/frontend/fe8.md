@@ -1,6 +1,10 @@
-ddomin212: do you have any tips for refactoring this react component?
+Daniel Dominko: 
+---
+do you have any tips for refactoring this react component?
 
-GitHub Copilot: Sure, here are some tips for refactoring the `SelectOptions` component:
+GitHub Copilot: 
+---
+Sure, here are some tips for refactoring the `SelectOptions` component:
 
 1. Destructure the props in the function signature to make the code more concise and readable.
 2. Extract the `select` element into a separate component to reduce the complexity of the `SelectOptions` component.

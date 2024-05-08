@@ -1,4 +1,6 @@
-Code-Llama-34b-instruct from Meta. Excels at generating and discussing code and supports a context window of 16k tokens.
+Daniel Dominko: 
+---
+
 
 I want to create a simple weather dashboard web application, which fetches data from a weather API, parses them on the backend and then sends them to the frontend and also saves them inside a database. The main parameter should be that the app is free to create, as I don't have any money to spend.
 
@@ -29,7 +31,9 @@ along with many others that are for you to infer. Also give me a list of other l
 Code-Llama-34b
 Code-Llama-34b
 
-Poe
+CodeLlama: 
+---
+
 Sure, here's my recommendation for each component of the tech stack, along with three alternative options and the reasons why I chose the recommended option:
 
 Programming language and framework for the backend: Python with Flask or Django
@@ -76,6 +80,10 @@ Moment.js for working with dates and times
 Chart.js for creating charts and graphs
 Overall, the key factors to consider when choosing a tech stack are scalability, availability, performance, security, and cost. You want to choose technologies that are well-established, have a large community, and are easy to use and maintain.
 
+Daniel Dominko: 
+---
+
+
 Now with your chosen tech stack, we will move towards desiging the application itself. I want you to give me recommendations on the following problems that I am facing while writing this app:
 1. Should I use functional or object oriented desing, or both?
 2. Should I use REST, GraphQL or something else for communication between components?
@@ -90,7 +98,9 @@ Now with your chosen tech stack, we will move towards desiging the application i
 Code-Llama-34b
 Code-Llama-34b
 
-Poe
+CodeLlama: 
+---
+
 Sure, I'd be happy to help! Here are some recommendations based on the tech stack you provided:
 
 Functional vs Object-Oriented Design:
@@ -136,12 +146,18 @@ Caching could be useful for improving the performance of your app, especially if
 
 I hope these recommendations help you get started on your weather app project! Let me know if you have any further questions.
 
+Daniel Dominko: 
+---
+
+
 In number 5 you just reiterated what I said, but I wanted for you to list more concerns I terms of security and how to handle them.
 
 Code-Llama-34b
 Code-Llama-34b
 
-Poe
+CodeLlama: 
+---
+
 Sure, here are some additional security concerns and potential solutions for a weather app:
 
 Authentication and Authorization: Make sure that only authorized users can access the app and its data. Implement authentication mechanisms such as OAuth or JWT to verify user identities. Use role-based access control (RBAC) to restrict access to sensitive data based on user roles.
@@ -156,12 +172,18 @@ Web Application Firewall (WAF): Use a WAF to protect against common web attacks 
 Incident Response Plan: Have an incident response plan in place in case of a security breach. This should include procedures for containing the attack, notifying affected parties, and restoring normal operations.
 By considering these security concerns and implementing appropriate measures, you can build a secure and reliable weather app that provides accurate and timely weather information to users.
 
+Daniel Dominko: 
+---
+
+
 In "7. Design Patterns" I wanted you to list the specific design patterns that could be used inside my app, not the general patterns used
 
 Code-Llama-34b
 Code-Llama-34b
 
-Poe
+CodeLlama: 
+---
+
 
 Sure, here are some specific design patterns that could be used in your weather app:
 

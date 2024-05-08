@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the current module:
 
 1. **Use of setUp method**: Instead of using `setUpClass`, you can use the `setUp` method which is run before each test. This can help ensure that each test is run in isolation and doesn't affect the state of other tests. 
 
@@ -22,9 +26,13 @@ def setUp(self):
 
 7. **Test more edge cases**: You could add more tests for edge cases, for example what happens if the units are not "metric" or "imperial", or if the city name is empty or contains special characters.
 
-ddomin212: How well does the code in the current module align to PEP standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to PEP standards?
 
-GitHub Copilot: The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
+GitHub Copilot: 
+---
+The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
 
 1. **Imports**: The imports are organized correctly, with standard library imports first, then third-party libraries, and finally local application imports.
 
@@ -42,9 +50,13 @@ GitHub Copilot: The code in the current module generally aligns well with PEP 8,
 
 Remember, PEP 8 is a guide, not a strict rule set. It's designed to provide consistency in Python code, but there may be times when deviating from it makes sense.
 
-ddomin212: Could i use different Python syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different Python syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and performant, but there are a few changes you could make to improve it further:
+GitHub Copilot: 
+---
+The current module is already quite readable and performant, but there are a few changes you could make to improve it further:
 
 1. **Use setUp method**: Instead of using `setUpClass`, you can use the `setUp` method which is run before each test. This can help ensure that each test is run in isolation and doesn't affect the state of other tests. 
 
@@ -96,9 +108,13 @@ class TestOpenWeatherAPI(unittest.TestCase):
 
 This version of the code is more DRY and makes better use of constants. It also ensures that each test is run in isolation by using the `setUp` method.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is generally clean and adheres to many good practices. Here's a breakdown according to the principles you mentioned:
+GitHub Copilot: 
+---
+The code in the current module is generally clean and adheres to many good practices. Here's a breakdown according to the principles you mentioned:
 
 1. **SOLID**: The Single Responsibility Principle is followed as each test method tests a single function of the `OpenWeatherAPI` class. The Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, and Dependency Inversion Principle are not directly applicable as this is a test module and does not define any new classes or interfaces.
 
@@ -142,9 +158,13 @@ class TestOpenWeatherAPI(unittest.TestCase):
 
 In this version, `query_params` is defined once in the `setUp` method and reused in each test, adhering to the DRY principle.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current test module is generally well-structured and covers the main functionalities of the `OpenWeatherAPI` class. However, there are a few areas that could be improved:
+GitHub Copilot: 
+---
+The current test module is generally well-structured and covers the main functionalities of the `OpenWeatherAPI` class. However, there are a few areas that could be improved:
 
 1. **Setup**: The `setUpClass` method is used to create an instance of `OpenWeatherAPI`. This is fine if the setup is expensive (e.g., opening a database connection), but in this case, it might be better to use the `setUp` method instead. This would ensure that each test is run in isolation, which is a good practice in unit testing.
 

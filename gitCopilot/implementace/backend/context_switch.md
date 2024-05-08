@@ -1,14 +1,26 @@
-ddomin212: do you have any refactoring tips for this code?
+Daniel Dominko: 
+---
+do you have any refactoring tips for this code?
 
-GitHub Copilot: One thing I noticed is that there are two test methods with the same name `test_get_air_quality`. This can cause issues when running the tests. You can rename one of them to something like `test_get_historical_data` to make the test names more descriptive and avoid naming conflicts. Additionally, you can consider using `assertIsInstance` instead of `assertEqual(type())` for type checking. This can make the code more readable.
+GitHub Copilot: 
+---
+One thing I noticed is that there are two test methods with the same name `test_get_air_quality`. This can cause issues when running the tests. You can rename one of them to something like `test_get_historical_data` to make the test names more descriptive and avoid naming conflicts. Additionally, you can consider using `assertIsInstance` instead of `assertEqual(type())` for type checking. This can make the code more readable.
 
-ddomin212: Can you suggest any other refactoring tips for this code?
+Daniel Dominko: 
+---
+Can you suggest any other refactoring tips for this code?
 
-GitHub Copilot: One suggestion is to use `setUp` method to initialize the `parser` object and `mocked_climate_response` and `mocked_AQI_response` dictionaries. This can help reduce code duplication and make the tests more readable. Additionally, you can consider using `assertDictEqual` instead of `assertEqual` for comparing dictionaries. This can make the code more concise and easier to read.
+GitHub Copilot: 
+---
+One suggestion is to use `setUp` method to initialize the `parser` object and `mocked_climate_response` and `mocked_AQI_response` dictionaries. This can help reduce code duplication and make the tests more readable. Additionally, you can consider using `assertDictEqual` instead of `assertEqual` for comparing dictionaries. This can make the code more concise and easier to read.
 
-ddomin212: could you rewrite the bunch of assertEqual statements to a one assertDictEqual?
+Daniel Dominko: 
+---
+could you rewrite the bunch of assertEqual statements to a one assertDictEqual?
 
-GitHub Copilot: Certainly! Here's an example of how you can use `assertDictEqual` to compare the `climate_stats.climate[0]` dictionary with the expected dictionary:
+GitHub Copilot: 
+---
+Certainly! Here's an example of how you can use `assertDictEqual` to compare the `climate_stats.climate[0]` dictionary with the expected dictionary:
 
 ```python
 expected_climate = {
@@ -26,9 +38,13 @@ self.assertDictEqual(climate_stats.climate[0], expected_climate)
 
 This will compare the two dictionaries and raise an assertion error if they are not equal.
 
-ddomin212: could you give me refactoring this for the TestOpenWeatherParser class?
+Daniel Dominko: 
+---
+could you give me refactoring this for the TestOpenWeatherParser class?
 
-GitHub Copilot: Certainly! Here's an example of how you can refactor the `TestOpenWeatherParser` class to use `assertDictEqual` and `setUp` method:
+GitHub Copilot: 
+---
+Certainly! Here's an example of how you can refactor the `TestOpenWeatherParser` class to use `assertDictEqual` and `setUp` method:
 
 ```python
 import unittest

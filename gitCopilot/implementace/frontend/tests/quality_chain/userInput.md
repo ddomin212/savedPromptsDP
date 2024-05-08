@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: The current module is a test file for a React component named `UnitsInput`. It uses the `@testing-library/react` library for testing. The tests are well-structured and follow good practices. However, there are a few minor improvements that could be made:
+GitHub Copilot: 
+---
+The current module is a test file for a React component named `UnitsInput`. It uses the `@testing-library/react` library for testing. The tests are well-structured and follow good practices. However, there are a few minor improvements that could be made:
 
 1. **DRY (Don't Repeat Yourself) Principle**: The `render` function is called in each test with the same props. This could be moved to a `beforeEach` block to avoid repetition.
 
@@ -37,9 +41,13 @@ describe("UnitsInput", () => {
 
 This refactoring makes the code cleaner and easier to maintain.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module is well-aligned with the latest ECMAScript (ES) standards. Here's why:
+GitHub Copilot: 
+---
+The code in the current module is well-aligned with the latest ECMAScript (ES) standards. Here's why:
 
 1. **ES6 Modules**: The code uses ES6 module syntax (`import`/`export`) which is the standard in modern JavaScript.
 
@@ -55,9 +63,13 @@ GitHub Copilot: The code in the current module is well-aligned with the latest E
 
 Overall, the code is modern and follows the latest ES standards. However, it's always a good idea to keep up with the latest ES features and standards, as they can provide more efficient, readable, and concise ways to write JavaScript.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and performant. It follows modern JavaScript practices and uses the Jest and React Testing Library effectively. However, there are a few minor improvements that could be made for readability:
+GitHub Copilot: 
+---
+The current module is already quite readable and performant. It follows modern JavaScript practices and uses the Jest and React Testing Library effectively. However, there are a few minor improvements that could be made for readability:
 
 1. **Use `beforeEach` for common setup**: The `render` function is called in each test with the same props. This could be moved to a `beforeEach` block to avoid repetition.
 
@@ -98,9 +110,13 @@ describe("UnitsInput", () => {
 
 This refactoring makes the code cleaner and easier to maintain. It also makes the test output easier to read, as tests are grouped by related functionality.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **SOLID**: This principle is more applicable to object-oriented programming, but some aspects can be applied to functional programming as well. The Single Responsibility Principle is followed as each test has a single reason to change.
 
@@ -143,9 +159,13 @@ describe("UnitsInput", () => {
 
 This refactoring removes the repetition of rendering the `UnitsInput` component and getting the buttons by their test IDs.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good example of a test module. It uses the Jest testing framework and the React Testing Library, which are both popular choices for testing React components. The tests are well-structured and follow good practices. Here's a breakdown:
+GitHub Copilot: 
+---
+The current module is a good example of a test module. It uses the Jest testing framework and the React Testing Library, which are both popular choices for testing React components. The tests are well-structured and follow good practices. Here's a breakdown:
 
 1. **Clear Test Descriptions**: Each test has a clear description of what it's testing.
 

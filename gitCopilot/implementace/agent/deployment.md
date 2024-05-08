@@ -1,6 +1,10 @@
-ddomin212: @workspace  How can i set up this React and FastAPI project using Heroku and Firebase Hosting?
+Daniel Dominko: 
+---
+@workspace  How can i set up this React and FastAPI project using Heroku and Firebase Hosting?
 
-GitHub Copilot: To set up this project using Heroku for the FastAPI backend and Firebase Hosting for the React frontend, follow these steps:
+GitHub Copilot: 
+---
+To set up this project using Heroku for the FastAPI backend and Firebase Hosting for the React frontend, follow these steps:
 
 1. **Backend Deployment on Heroku:**
 
@@ -32,9 +36,13 @@ GitHub Copilot: To set up this project using Heroku for the FastAPI backend and 
 
 Remember to replace `<app-name>` with the name of your Heroku app. Also, ensure that your Firebase configuration is correctly set in your environment variables for both the backend and frontend. For the frontend, it's set in the `.env` file as `REACT_APP_FIREBASE_CONFIG` and for the backend, it's set in the Heroku app settings.
 
-ddomin212: What if I want to use the Container Service on Heroku?
+Daniel Dominko: 
+---
+What if I want to use the Container Service on Heroku?
 
-GitHub Copilot: If you want to use the Container Service on Heroku, you'll need to create a `Dockerfile` for your FastAPI application and push the Docker image to Heroku. Here are the steps:
+GitHub Copilot: 
+---
+If you want to use the Container Service on Heroku, you'll need to create a `Dockerfile` for your FastAPI application and push the Docker image to Heroku. Here are the steps:
 
 1. **Create a Dockerfile:**
 
@@ -58,9 +66,13 @@ GitHub Copilot: If you want to use the Container Service on Heroku, you'll need 
 
 Remember to replace `<app-name>` with the name of your Heroku app. Also, ensure that your Firebase configuration is correctly set in your environment variables for the backend in the Heroku app settings.
 
-ddomin212: Are you sure the Dockerfile is correct?
+Daniel Dominko: 
+---
+Are you sure the Dockerfile is correct?
 
-GitHub Copilot: Yes, the Dockerfile provided is a basic one for a FastAPI application. It uses the `tiangolo/uvicorn-gunicorn-fastapi:python3.8` image, which is a pre-configured image suitable for most FastAPI applications. 
+GitHub Copilot: 
+---
+Yes, the Dockerfile provided is a basic one for a FastAPI application. It uses the `tiangolo/uvicorn-gunicorn-fastapi:python3.8` image, which is a pre-configured image suitable for most FastAPI applications. 
 
 Here's the Dockerfile again for reference:
 
@@ -77,9 +89,13 @@ This Dockerfile does the following:
 
 However, depending on the specifics of your application, you might need to adjust this Dockerfile. For example, if your application has dependencies that need to be installed, you would need to add instructions to install those dependencies.
 
-ddomin212: But you do not run the app iteself inside the Dockerfile?
+Daniel Dominko: 
+---
+But you do not run the app iteself inside the Dockerfile?
 
-GitHub Copilot: You're correct. The Dockerfile I provided is a basic one and it doesn't explicitly run the app. The `tiangolo/uvicorn-gunicorn-fastapi:python3.8` image is designed to automatically find and run your application, but it expects the FastAPI application to be in a file named `main.py` at the `/app` directory.
+GitHub Copilot: 
+---
+You're correct. The Dockerfile I provided is a basic one and it doesn't explicitly run the app. The `tiangolo/uvicorn-gunicorn-fastapi:python3.8` image is designed to automatically find and run your application, but it expects the FastAPI application to be in a file named `main.py` at the `/app` directory.
 
 If your application entry point is different, you'll need to customize the Dockerfile or the command used to start the server. For example, if your FastAPI application is in a file named `app.py`, you can modify the Dockerfile like this:
 

@@ -1,6 +1,10 @@
-ddomin212: Could you give me a pull request template for my project?
+Daniel Dominko: 
+---
+Could you give me a pull request template for my project?
 
-GitHub Copilot: Sure! Here's a basic pull request template you can use:
+GitHub Copilot: 
+---
+Sure! Here's a basic pull request template you can use:
 
 ```markdown
 ## Description
@@ -25,13 +29,21 @@ Please include a summary of the change and which issue is fixed. Please also inc
 
 Feel free to modify it to fit your project's needs.
 
-ddomin212: how do you usually name this file and where do you place it?
+Daniel Dominko: 
+---
+how do you usually name this file and where do you place it?
 
-GitHub Copilot: The pull request template file is usually named `PULL_REQUEST_TEMPLATE.md` and placed in the root directory of your project. This allows GitHub to automatically detect the file and use it as the default template for pull requests.
+GitHub Copilot: 
+---
+The pull request template file is usually named `PULL_REQUEST_TEMPLATE.md` and placed in the root directory of your project. This allows GitHub to automatically detect the file and use it as the default template for pull requests.
 
-ddomin212: Could you give me a readme file template for a simple weather app built with FastAPI and React?
+Daniel Dominko: 
+---
+Could you give me a readme file template for a simple weather app built with FastAPI and React?
 
-GitHub Copilot: Sure! Here's a basic README template you can use:
+GitHub Copilot: 
+---
+Sure! Here's a basic README template you can use:
 
 ```markdown
 # Weather App
@@ -82,9 +94,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to modify it to fit your project's needs.
 
-ddomin212: Could you give me a template for the LICENSE.md file for MIT license?
+Daniel Dominko: 
+---
+Could you give me a template for the LICENSE.md file for MIT license?
 
-GitHub Copilot: Sure! Here's a basic LICENSE template for the MIT License:
+GitHub Copilot: 
+---
+Sure! Here's a basic LICENSE template for the MIT License:
 
 ```
 MIT License
@@ -112,6 +128,10 @@ THE SOFTWARE.
 
 Feel free to modify it to fit your project's needs. Just replace `[year]` and `[author]` with the appropriate information.
 
-ddomin212: what should i place in autor, my full name or my github username?
+Daniel Dominko: 
+---
+what should i place in autor, my full name or my github username?
 
-GitHub Copilot: You can use either your full name or your GitHub username in the `[author]` field of the MIT License. It's up to you which one you prefer to use. If you're contributing to a project under your GitHub username, it might make sense to use that as the author name. If you're contributing to a project under your full name, it might make more sense to use that as the author name.
+GitHub Copilot: 
+---
+You can use either your full name or your GitHub username in the `[author]` field of the MIT License. It's up to you which one you prefer to use. If you're contributing to a project under your GitHub username, it might make sense to use that as the author name. If you're contributing to a project under your full name, it might make more sense to use that as the author name.

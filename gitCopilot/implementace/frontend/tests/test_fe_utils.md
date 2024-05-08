@@ -1,6 +1,10 @@
-ddomin212: could you give me tests for functions in this module?
+Daniel Dominko: 
+---
+could you give me tests for functions in this module?
 
-GitHub Copilot: Sure! Here are some test cases you could use to test the `createChartData` and `setXYValues` functions:
+GitHub Copilot: 
+---
+Sure! Here are some test cases you could use to test the `createChartData` and `setXYValues` functions:
 
 ```javascript
 describe("chartUtils", () => {
@@ -35,9 +39,13 @@ describe("chartUtils", () => {
 
 These tests use the Jest testing framework and the `expect` assertion library. You can run them in a test runner like Jest to verify that the functions are working correctly.
 
-ddomin212: what imports should i use?
+Daniel Dominko: 
+---
+what imports should i use?
 
-GitHub Copilot: Based on the code in the test file, you'll need to import the `createChartData` and `setXYValues` functions from the `chartUtils` module. You'll also need to import the Jest testing framework and the `expect` assertion library. Here's an example of what the imports might look like:
+GitHub Copilot: 
+---
+Based on the code in the test file, you'll need to import the `createChartData` and `setXYValues` functions from the `chartUtils` module. You'll also need to import the Jest testing framework and the `expect` assertion library. Here's an example of what the imports might look like:
 
 ```javascript
 import { createChartData, setXYValues } from "./chartUtils";
@@ -46,10 +54,14 @@ import { describe, expect, it } from "@jest/globals";
 
 Note that the specific import statements may vary depending on your project setup and the versions of Jest and other libraries you're using.
 
-ddomin212: now could you give me tests for all the functions inside the parsingUtils.js module?
+Daniel Dominko: 
+---
+now could you give me tests for all the functions inside the parsingUtils.js module?
 
 
-GitHub Copilot: Sure! Here are some test cases you could use to test the `formatHourlyWeather` and `getDailyIcon` functions:
+GitHub Copilot: 
+---
+Sure! Here are some test cases you could use to test the `formatHourlyWeather` and `getDailyIcon` functions:
 
 ```javascript
 import { formatHourlyWeather, getDailyIcon } from "./parsingUtils";
@@ -113,9 +125,13 @@ describe("parsingUtils", () => {
 
 These tests use the Jest testing framework and the `expect` assertion library. You can run them in a test runner like Jest to verify that the functions are working correctly. Note that you may need to adjust the test data and assertions to match the specific behavior of your functions.
 
-ddomin212: what about the getDailyMax and formatCurrentWeather functions?
+Daniel Dominko: 
+---
+what about the getDailyMax and formatCurrentWeather functions?
 
-GitHub Copilot: Sure! Here are some test cases you could use to test the `getDailyMax` and `formatCurrentWeather` functions:
+GitHub Copilot: 
+---
+Sure! Here are some test cases you could use to test the `getDailyMax` and `formatCurrentWeather` functions:
 
 ```javascript
 import { formatToLocalTime, getDailyMax, formatCurrentWeather } from "./parsingUtils";
@@ -206,9 +222,13 @@ describe("parsingUtils", () => {
 
 These tests use the Jest testing framework and the `expect` assertion library. You can run them in a test runner like Jest to verify that the functions are working correctly. Note that you may need to adjust the test data and assertions to match the specific behavior of your functions.
 
-ddomin212: How can I test the `formatToLocalTime` function?
+Daniel Dominko: 
+---
+How can I test the `formatToLocalTime` function?
 
-GitHub Copilot: To test the `formatToLocalTime` function, you can use Jest to create a test file and write test cases that verify the function's behavior. Here's an example of what the test file might look like:
+GitHub Copilot: 
+---
+To test the `formatToLocalTime` function, you can use Jest to create a test file and write test cases that verify the function's behavior. Here's an example of what the test file might look like:
 
 ```javascript
 import { formatToLocalTime } from "./timeUtils";
@@ -235,9 +255,13 @@ describe("timeUtils", () => {
 
 These tests use the Jest testing framework and the `expect` assertion library. The first test case verifies that the function formats a date string to local time with the default format ("HH:mm"). The second test case verifies that the function formats a date string to local time with a custom format ("h:mm a"). You can run these tests in a test runner like Jest to verify that the function is working correctly.
 
-ddomin212: could you also test the calcOffset function?
+Daniel Dominko: 
+---
+could you also test the calcOffset function?
 
-GitHub Copilot: Sure! Here are some test cases you could use to test the `calcOffset` function:
+GitHub Copilot: 
+---
+Sure! Here are some test cases you could use to test the `calcOffset` function:
 
 ```javascript
 import { calcOffset } from "./timeUtils";

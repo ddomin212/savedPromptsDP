@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the test functions in the `weatherService.test.js` module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the test functions in the `weatherService.test.js` module:
 
 1. **DRY (Don't Repeat Yourself):** There is a lot of repeated code in each test case. You can create a setup function that initializes the common variables and mocks the fetch response. This function can be called in each test case with the specific parameters for that case.
 
@@ -82,9 +86,13 @@ describe("getWeatherData", () => {
 
 This refactoring reduces the amount of repeated code and makes the tests easier to read and maintain.
 
-ddomin212: Expand on number 5. How can I use a data provider in this test?
+Daniel Dominko: 
+---
+Expand on number 5. How can I use a data provider in this test?
 
-GitHub Copilot: Sure, a data provider is a way to run the same test multiple times with different sets of data. In Jest, you can use `test.each` or `it.each` to create a table of test cases.
+GitHub Copilot: 
+---
+Sure, a data provider is a way to run the same test multiple times with different sets of data. In Jest, you can use `test.each` or `it.each` to create a table of test cases.
 
 Here's how you can refactor your tests to use a data provider:
 
@@ -153,9 +161,13 @@ describe("getWeatherData", () => {
 
 In this refactoring, each test case is an object in the `testCases` array. Each object has the parameters for the test, the mock response, the expected result, and a flag indicating whether an error is expected. The tests are then run in a loop, with each test case being used to populate the parameters and expectations for a test.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features it uses:
+GitHub Copilot: 
+---
+The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some of the ES features it uses:
 
 1. **Import/Export Statements (ES6):** The code uses `import` to import modules, which is part of ES6 (ES2015).
 
@@ -179,9 +191,13 @@ However, there are a few areas where the code could be improved to better align 
 
 4. **Optional Chaining:** If there's a chance that an object property or array index could be undefined, the code could use optional chaining (`?.`), which is an ES2020 feature that allows you to access nested properties of an object without having to check if each intermediate property is defined.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and performant, but there are a few changes you could make to improve readability:
+GitHub Copilot: 
+---
+The current module is already quite readable and performant, but there are a few changes you could make to improve readability:
 
 1. **Use Destructuring Assignment:** You can use destructuring assignment to make the code more concise and easier to read. For example, when you're checking the fetch mock calls, you can destructure the arguments to make the code more readable.
 
@@ -234,9 +250,13 @@ describe("getWeatherData", () => {
 
 In terms of performance, the changes are unlikely to have a significant impact. The performance of this code is likely to be dominated by the time it takes to make the fetch request, which is not affected by these changes.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is generally clean and well-structured. Here's a breakdown in terms of the principles you mentioned:
+GitHub Copilot: 
+---
+The code in the current module is generally clean and well-structured. Here's a breakdown in terms of the principles you mentioned:
 
 1. **SOLID:** The Single Responsibility Principle (SRP) is well adhered to. Each test case tests a single behavior of the `getWeatherData` function. However, the Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles are not applicable here as they pertain to class-based object-oriented programming, and this module is written in functional style.
 
@@ -270,9 +290,13 @@ it("should make a POST request to the weather endpoint with the user's token and
 
 This reduces the amount of setup code in each test case, making the code DRYer and easier to read.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good example of a test module. It follows many best practices for writing tests:
+GitHub Copilot: 
+---
+The current module is a good example of a test module. It follows many best practices for writing tests:
 
 1. **Isolation:** Each test is isolated and does not depend on the state from other tests. This is achieved by resetting the fetch mocks before each test.
 

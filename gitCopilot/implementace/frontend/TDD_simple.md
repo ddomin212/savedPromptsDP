@@ -1,6 +1,10 @@
-ddomin212: given these tests, could you build a minimum viable implementation of both the fucntions being tested?
+Daniel Dominko: 
+---
+given these tests, could you build a minimum viable implementation of both the fucntions being tested?
 
-GitHub Copilot: Sure! Here's a minimum viable implementation of the `formatToLocalTime` and `calcOffset` functions based on the tests you provided:
+GitHub Copilot: 
+---
+Sure! Here's a minimum viable implementation of the `formatToLocalTime` and `calcOffset` functions based on the tests you provided:
 
 ```javascript
 function formatToLocalTime(secs, zone, format = "HH:mm") {
@@ -19,9 +23,13 @@ function calcOffset(zone) {
 
 Note that this is just a minimum viable implementation and may not cover all edge cases.
 
-ddomin212: What are some edge cases that the minimum viable implementation of the `formatToLocalTime` and `calcOffset` functions may not cover?
+Daniel Dominko: 
+---
+What are some edge cases that the minimum viable implementation of the `formatToLocalTime` and `calcOffset` functions may not cover?
 
-GitHub Copilot: For the `formatToLocalTime` function, some edge cases that the minimum viable implementation may not cover include:
+GitHub Copilot: 
+---
+For the `formatToLocalTime` function, some edge cases that the minimum viable implementation may not cover include:
 - Handling time zones that are not in whole hour offsets (e.g. 30-minute or 45-minute offsets)
 - Handling daylight saving time changes
 - Handling time zones that have negative offsets ahead of UTC (e.g. UTC-12)
@@ -30,9 +38,13 @@ For the `calcOffset` function, some edge cases that the minimum viable implement
 - Handling time zones that are not in whole hour offsets (e.g. 30-minute or 45-minute offsets)
 - Handling time zones that have negative offsets ahead of UTC (e.g. UTC-12)
 
-ddomin212: Could you modify the code to handle these edge cases?
+Daniel Dominko: 
+---
+Could you modify the code to handle these edge cases?
 
-GitHub Copilot: Sure! Here's a modified implementation of the `formatToLocalTime` function that handles time zones that are not in whole hour offsets and daylight saving time changes:
+GitHub Copilot: 
+---
+Sure! Here's a modified implementation of the `formatToLocalTime` function that handles time zones that are not in whole hour offsets and daylight saving time changes:
 
 ```javascript
 function formatToLocalTime(secs, zone, format = "HH:mm") {

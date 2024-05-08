@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the current module:
 
 1. **Use of Test Data:** The test data `items`, `daily`, `yearly`, and `units` are repeated in each test case. You can move them to a `beforeEach` block to avoid repetition. This will make your tests cleaner and easier to maintain.
 
@@ -86,9 +90,13 @@ describe("ChartView", () => {
 
 This refactoring makes the tests more robust and easier to maintain.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some observations:
+GitHub Copilot: 
+---
+The code in the current module aligns well with the latest ECMAScript (ES) standards. Here are some observations:
 
 1. **Import/Export Statements:** The code uses `import` and `export` statements, which are part of ES6 and later.
 
@@ -108,9 +116,13 @@ GitHub Copilot: The code in the current module aligns well with the latest ECMAS
 
 Overall, the code is modern and aligns well with the latest ES standards. However, it could benefit from the use of some additional ES features like template literals, the spread operator, and optional chaining.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and adheres to modern JavaScript (ES6+) syntax. However, there are a few minor improvements that could be made for readability and maintainability:
+GitHub Copilot: 
+---
+The current module is already quite readable and adheres to modern JavaScript (ES6+) syntax. However, there are a few minor improvements that could be made for readability and maintainability:
 
 1. **Use of Test Data:** The test data `items`, `daily`, `yearly`, and `units` are repeated in each test case. You can move them to a `beforeEach` block to avoid repetition. This will make your tests cleaner and easier to maintain.
 
@@ -192,9 +204,13 @@ describe("ChartView", () => {
 
 This refactoring makes the tests more robust and easier to maintain. It doesn't necessarily improve performance, as the performance of test code is usually not a concern. The focus is more on readability and maintainability.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **SOLID:** The Single Responsibility Principle (SRP) is followed as each test case is responsible for testing a single behavior of the component. The Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles are not directly applicable to this test module.
 
@@ -288,9 +304,13 @@ describe("ChartView", () => {
 
 This refactoring makes the tests more robust and easier to maintain. It doesn't necessarily improve performance, as the performance of test code is usually not a concern. The focus is more on readability and maintainability.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current test module is well-structured and covers two important scenarios: rendering the component with the correct props and rendering the component with undefined props. However, there are a few areas that could be improved:
+GitHub Copilot: 
+---
+The current test module is well-structured and covers two important scenarios: rendering the component with the correct props and rendering the component with undefined props. However, there are a few areas that could be improved:
 
 1. **Assertions:** In the first test case, there are `expect(getByText(...))` statements without any assertions. These statements are not actually testing anything. You should add `.not.toBeNull()` or `.toBeInTheDocument()` to these statements to make sure the texts are actually found.
 

@@ -1,6 +1,10 @@
-ddomin212: could you give me tests for the OpenMeteoAPI class methods?
+Daniel Dominko: 
+---
+could you give me tests for the OpenMeteoAPI class methods?
 
-GitHub Copilot: Sure! Here are some test cases for the `OpenMeteoAPI` class methods:
+GitHub Copilot: 
+---
+Sure! Here are some test cases for the `OpenMeteoAPI` class methods:
 
 ```python
 import unittest
@@ -55,9 +59,13 @@ if __name__ == "__main__":
 
 These tests use the `unittest` module and the `patch` decorator from the `unittest.mock` module to mock the `requests.get` function and test the `get_api_response` method for both the `air_quality` and `climate` types.
 
-ddomin212: nwo do the same for the OpenWeatherAPI, but without mocks and with real URLs and responses
+Daniel Dominko: 
+---
+nwo do the same for the OpenWeatherAPI, but without mocks and with real URLs and responses
 
-GitHub Copilot: Sure! Here are some test cases for the `OpenWeatherAPI` class methods that use real URLs and responses:
+GitHub Copilot: 
+---
+Sure! Here are some test cases for the `OpenWeatherAPI` class methods that use real URLs and responses:
 
 ```python
 import unittest
@@ -102,9 +110,13 @@ class TestOpenWeatherAPI(unittest.TestCase):
 
 These tests use the `unittest` module and test the `get_weather`, `get_forecast`, and `get_api_response` methods for the `OpenWeatherAPI` class. The tests use real URLs and responses from the OpenWeatherMap API.
 
-ddomin212: add tests to the OpenMeteo class for fetching the air_quality and climate stats objects
+Daniel Dominko: 
+---
+add tests to the OpenMeteo class for fetching the air_quality and climate stats objects
 
-GitHub Copilot: Sure! Here are some additional test cases for the `OpenMeteoAPI` class that test the `get_air_quality_stats` and `get_climate_stats` methods:
+GitHub Copilot: 
+---
+Sure! Here are some additional test cases for the `OpenMeteoAPI` class that test the `get_air_quality_stats` and `get_climate_stats` methods:
 
 ```python
 import unittest
@@ -175,9 +187,13 @@ if __name__ == "__main__":
 
 These tests use the `unittest` module and the `patch` decorator from the `unittest.mock` module to mock the `get_api_response` method and test the `get_air_quality_stats` and `get_climate_stats` methods for the `OpenMeteoAPI` class.
 
-ddomin212: give me a test for all the functions inside OpenMeteoParser class
+Daniel Dominko: 
+---
+give me a test for all the functions inside OpenMeteoParser class
 
-GitHub Copilot: Sure! Here are some test cases for all the functions inside the `OpenMeteoParser` class:
+GitHub Copilot: 
+---
+Sure! Here are some test cases for all the functions inside the `OpenMeteoParser` class:
 
 ```python
 import unittest
@@ -271,9 +287,13 @@ if __name__ == "__main__":
 
 These tests use the `unittest` module and test the `historical_data`, `parse_air_quality`, and `parse_climate_stats` methods for the `OpenMeteoParser` class.
 
-ddomin212: now could you give me a test for the OpenWeatherParser function?
+Daniel Dominko: 
+---
+now could you give me a test for the OpenWeatherParser function?
 
-GitHub Copilot: Sure! Here's an example test case for the `current_weather` method of the `OpenWeatherParser` class:
+GitHub Copilot: 
+---
+Sure! Here's an example test case for the `current_weather` method of the `OpenWeatherParser` class:
 
 ```python
 import unittest
@@ -332,9 +352,13 @@ if __name__ == "__main__":
 
 This test case uses the `unittest` module and tests the `current_weather` method of the `OpenWeatherParser` class. It creates a sample response dictionary and checks if the parsed `CurrentWeather` object has the expected values.
 
-ddomin212: Could you also give me a test for the forecast function?
+Daniel Dominko: 
+---
+Could you also give me a test for the forecast function?
 
-GitHub Copilot: Sure! Here's an example test case for the `forecast` method of the `OpenWeatherParser` class:
+GitHub Copilot: 
+---
+Sure! Here's an example test case for the `forecast` method of the `OpenWeatherParser` class:
 
 ```python
 import unittest
@@ -418,9 +442,13 @@ if __name__ == "__main__":
 
 This test case uses the `unittest` module and tests the `forecast` method of the `OpenWeatherParser` class. It creates a sample response dictionary and checks if the parsed `Forecast` object has the expected values.
 
-ddomin212: give me test for both of these functions
+Daniel Dominko: 
+---
+give me test for both of these functions
 
-GitHub Copilot: Sure! Here are some test cases for the `parse_query` and `units_appendix` functions:
+GitHub Copilot: 
+---
+Sure! Here are some test cases for the `parse_query` and `units_appendix` functions:
 
 ```python
 import unittest
@@ -449,9 +477,13 @@ if __name__ == "__main__":
 
 These tests use the `unittest` module and test the `parse_query` and `units_appendix` functions. The `parse_query` test case creates a sample dictionary of query parameters and checks if the parsed query string is correct. The `units_appendix` test case checks if the function returns the correct units of measurement for both metric and imperial systems.
 
-ddomin212: now give me tests for all these functions and decorators
+Daniel Dominko: 
+---
+now give me tests for all these functions and decorators
 
-GitHub Copilot: Sure! Here are some test cases for the `handle_exception` decorator and the `handle_error` function:
+GitHub Copilot: 
+---
+Sure! Here are some test cases for the `handle_exception` decorator and the `handle_error` function:
 
 ```python
 import unittest

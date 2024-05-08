@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for the UnitsInput component?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for the UnitsInput component?
 
-GitHub Copilot: Sure! Here are some refactoring tips for the `UnitsInput` component:
+GitHub Copilot: 
+---
+Sure! Here are some refactoring tips for the `UnitsInput` component:
 
 - You can extract the button elements into a separate component to reduce duplication.
 - You can use a ternary operator to conditionally render the `|` separator instead of a separate `p` element.
@@ -39,9 +43,13 @@ export default UnitsInput;
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: How can I optimize the performance of the UnitsInput component, in terms of JavaScript and React?
+Daniel Dominko: 
+---
+How can I optimize the performance of the UnitsInput component, in terms of JavaScript and React?
 
-GitHub Copilot: One way to optimize the performance of the `UnitsInput` component is to use React.memo to memoize the component and prevent unnecessary re-renders. Since the `UnitsInput` component doesn't rely on any props or state other than `handleUnitsChange`, we can wrap it with `React.memo` to prevent it from re-rendering unnecessarily.
+GitHub Copilot: 
+---
+One way to optimize the performance of the `UnitsInput` component is to use React.memo to memoize the component and prevent unnecessary re-renders. Since the `UnitsInput` component doesn't rely on any props or state other than `handleUnitsChange`, we can wrap it with `React.memo` to prevent it from re-rendering unnecessarily.
 
 Here's an example of what the optimized code could look like:
 
@@ -79,9 +87,13 @@ By wrapping the `UnitsInput` component with `React.memo`, React will only re-ren
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: Would you say the UnitsInput component adheres to principles of clean code, such as SOLID, KISS or DRY? How could I improve it?
+Daniel Dominko: 
+---
+Would you say the UnitsInput component adheres to principles of clean code, such as SOLID, KISS or DRY? How could I improve it?
 
-GitHub Copilot: The `UnitsInput` component is a simple component that doesn't have a lot of complexity, so it's difficult to apply some of the principles of clean code like SOLID, KISS, or DRY to it. However, there are still some ways to improve the component:
+GitHub Copilot: 
+---
+The `UnitsInput` component is a simple component that doesn't have a lot of complexity, so it's difficult to apply some of the principles of clean code like SOLID, KISS, or DRY to it. However, there are still some ways to improve the component:
 
 - You could extract the button elements into a separate component to reduce duplication and make the code more modular.
 - You could use a ternary operator to conditionally render the `|` separator instead of a separate `p` element.
@@ -122,9 +134,13 @@ By extracting the button elements into a separate component, we've reduced dupli
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: Is the UnitsInput component easily testable?
+Daniel Dominko: 
+---
+Is the UnitsInput component easily testable?
 
-GitHub Copilot: Yes, the `UnitsInput` component is easily testable. Since it's a simple component that doesn't have any complex logic or state, we can easily test it by rendering it and checking that the buttons are rendered correctly and that the `handleUnitsChange` function is called when a button is clicked.
+GitHub Copilot: 
+---
+Yes, the `UnitsInput` component is easily testable. Since it's a simple component that doesn't have any complex logic or state, we can easily test it by rendering it and checking that the buttons are rendered correctly and that the `handleUnitsChange` function is called when a button is clicked.
 
 Here's an example of what a test for the `UnitsInput` component could look like using the React Testing Library:
 
@@ -157,9 +173,13 @@ In the first test, we're rendering the `UnitsInput` component and checking that 
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: Do you have any design patterns that could be used in the UnitsInput component?
+Daniel Dominko: 
+---
+Do you have any design patterns that could be used in the UnitsInput component?
 
-GitHub Copilot: The `UnitsInput` component is a simple component that doesn't have a lot of complexity, so it's difficult to apply some of the more advanced design patterns to it. However, there are still some design patterns that could be used to improve the component:
+GitHub Copilot: 
+---
+The `UnitsInput` component is a simple component that doesn't have a lot of complexity, so it's difficult to apply some of the more advanced design patterns to it. However, there are still some design patterns that could be used to improve the component:
 
 - The Observer pattern could be used to notify other components when the units change. This could be useful if other components in the application need to know when the units change so that they can update their own state or display.
 
@@ -210,9 +230,13 @@ In this example, we're using the `useContext` hook to get the `units` state and 
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: How would you rate the responsivness and accessibility of the HTML inside the UnitsInput component? The library used for CSS in classes is Tailwind.
+Daniel Dominko: 
+---
+How would you rate the responsivness and accessibility of the HTML inside the UnitsInput component? The library used for CSS in classes is Tailwind.
 
-GitHub Copilot: Based on the code snippet you provided, the responsiveness of the HTML inside the `UnitsInput` component seems to be good. The `flex` and `items-center` classes are used to center the buttons horizontally and vertically, and the `w-1/4` class is used to set the width of the component to 25% of its parent container. This should allow the component to resize and adapt to different screen sizes.
+GitHub Copilot: 
+---
+Based on the code snippet you provided, the responsiveness of the HTML inside the `UnitsInput` component seems to be good. The `flex` and `items-center` classes are used to center the buttons horizontally and vertically, and the `w-1/4` class is used to set the width of the component to 25% of its parent container. This should allow the component to resize and adapt to different screen sizes.
 
 As for accessibility, there are a few things that could be improved. The `button` elements should have a `type` attribute set to `"button"` to indicate that they're not submitting a form. Additionally, the `p` element used to render the `|` separator should have an `aria-hidden` attribute set to `"true"` to indicate that it's a purely decorative element and should be ignored by screen readers.
 
@@ -254,9 +278,13 @@ By adding the `type` attribute to the `button` elements and the `aria-hidden` at
 
 As for the use of Tailwind CSS, it's a popular library that provides a lot of utility classes for styling HTML elements. While it can make it easier to create responsive and visually appealing designs, it's important to use it responsibly and avoid overusing or abusing its classes.
 
-ddomin212: How would you rate the error handling of the UnitsInput component?
+Daniel Dominko: 
+---
+How would you rate the error handling of the UnitsInput component?
 
-GitHub Copilot: Based on the code snippet you provided, the `UnitsInput` component doesn't have any error handling logic. However, since it's a simple component that doesn't have any complex logic or state, there's not much that could go wrong with it.
+GitHub Copilot: 
+---
+Based on the code snippet you provided, the `UnitsInput` component doesn't have any error handling logic. However, since it's a simple component that doesn't have any complex logic or state, there's not much that could go wrong with it.
 
 The only potential issue I can see is if the `handleUnitsChange` prop is not passed to the component or is passed incorrectly, which could cause the component to not function as expected. However, this is more of a usage error than a problem with the component itself.
 
@@ -264,9 +292,13 @@ In general, error handling is an important aspect of writing robust and reliable
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: How would you rate the documentation in the code, is it easily understanbdable? Or would you have problems if you were to read it?
+Daniel Dominko: 
+---
+How would you rate the documentation in the code, is it easily understanbdable? Or would you have problems if you were to read it?
 
-GitHub Copilot: Based on the code snippet you provided, the documentation in the code is minimal, but the code itself is simple and easy to understand. The component is named `UnitsInput`, which gives a clear indication of what it does, and the `handleUnitsChange` prop is well-named and self-explanatory.
+GitHub Copilot: 
+---
+Based on the code snippet you provided, the documentation in the code is minimal, but the code itself is simple and easy to understand. The component is named `UnitsInput`, which gives a clear indication of what it does, and the `handleUnitsChange` prop is well-named and self-explanatory.
 
 The HTML markup is also straightforward and easy to understand, with the `button` elements clearly labeled with the units they represent and the `p` element used to render a separator.
 
@@ -274,9 +306,13 @@ Overall, while the code could benefit from more detailed documentation, it's sim
 
 Let me know if you have any questions or if there's anything else I can help you with!
 
-ddomin212: Do you think I could handle some parts of a code more efficiently by using different JavaScript or React syntax?
+Daniel Dominko: 
+---
+Do you think I could handle some parts of a code more efficiently by using different JavaScript or React syntax?
 
-GitHub Copilot: Based on the code snippet you provided, the JavaScript and React syntax used in the `UnitsInput` component is simple and straightforward, and there's not much that could be improved in terms of efficiency.
+GitHub Copilot: 
+---
+Based on the code snippet you provided, the JavaScript and React syntax used in the `UnitsInput` component is simple and straightforward, and there's not much that could be improved in terms of efficiency.
 
 However, there are a few minor changes that could be made to improve the readability and maintainability of the code:
 

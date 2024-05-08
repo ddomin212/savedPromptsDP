@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the current module:
 
 1. **DRY (Don't Repeat Yourself)**: The `render` function is called with the same parameters in both test cases. You can move this to a `beforeEach` block to avoid repetition.
 
@@ -57,9 +61,13 @@ describe("SelectItem", () => {
 
 This refactoring makes the tests more robust and easier to maintain.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code in the current module aligns well with the latest ECMAScript (ES) standards. Here's why:
+GitHub Copilot: 
+---
+The code in the current module aligns well with the latest ECMAScript (ES) standards. Here's why:
 
 1. **Import/Export Statements**: The code uses `import` and `export` statements, which are part of ES6 and later versions. This is a more modern and flexible way of handling modules compared to the older `require`/`module.exports` system in CommonJS.
 
@@ -75,9 +83,13 @@ GitHub Copilot: The code in the current module aligns well with the latest ECMAS
 
 Overall, the code is modern and aligns well with the latest ES standards. However, without seeing the `SelectItem` component, it's hard to say if there are other ES features that could be used to improve the code.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and performant, but there are a few changes you could make to improve it further:
+GitHub Copilot: 
+---
+The current module is already quite readable and performant, but there are a few changes you could make to improve it further:
 
 1. **Use `beforeEach` to avoid repetition**: The `render` function is called with the same parameters in both test cases. You can move this to a `beforeEach` block to avoid repetition.
 
@@ -134,9 +146,13 @@ describe("SelectItem", () => {
 
 This refactoring makes the tests more robust and easier to maintain.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
+GitHub Copilot: 
+---
+The code in the current module is quite clean and adheres to many of the principles you mentioned. Here's a breakdown:
 
 1. **DRY (Don't Repeat Yourself)**: The `render` function is called with the same parameters in both test cases. This is a repetition that can be avoided by moving the `render` function call to a `beforeEach` block.
 
@@ -205,9 +221,13 @@ describe("SelectItem", () => {
 
 This refactoring makes the tests more robust and easier to maintain.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current module is a good start for testing the `SelectItem` component. However, there are a few areas that could be improved:
+GitHub Copilot: 
+---
+The current module is a good start for testing the `SelectItem` component. However, there are a few areas that could be improved:
 
 1. **Assertive Expectations**: The lines `expect(select);`, `expect(option1);`, `expect(option2);`, and `expect(option3);` are not doing much. They will pass whether the elements exist or not. Instead, you should use more assertive expectations, like `expect(screen.getByRole('combobox')).toBeInTheDocument();`.
 

@@ -1,6 +1,10 @@
-ddomin212: Can you give me tests for the App component using the React testing library?
+Daniel Dominko: 
+---
+Can you give me tests for the App component using the React testing library?
 
-GitHub Copilot: Sure! Here are some tests for the `App` component using the React Testing Library:
+GitHub Copilot: 
+---
+Sure! Here are some tests for the `App` component using the React Testing Library:
 
 ```javascript
 import React from "react";
@@ -58,9 +62,13 @@ describe("App component", () => {
 
 These tests check that the main component of the weather app is rendered, that weather data is fetched when the user enters a query and clicks the search button, and that an error message is displayed when the weather data fetch fails.
 
-ddomin212: how can i get what mockFetchWeather has been caleed with
+Daniel Dominko: 
+---
+how can i get what mockFetchWeather has been caleed with
 
-GitHub Copilot: You can use the `toHaveBeenCalledWith` matcher from Jest to check what arguments a mock function has been called with. In the example I provided earlier, we use `toHaveBeenCalledWith` to check that `mockFetchWeather` has been called with an object containing the query and units:
+GitHub Copilot: 
+---
+You can use the `toHaveBeenCalledWith` matcher from Jest to check what arguments a mock function has been called with. In the example I provided earlier, we use `toHaveBeenCalledWith` to check that `mockFetchWeather` has been called with an object containing the query and units:
 
 ```javascript
 expect(mockFetchWeather).toHaveBeenCalledWith({
@@ -71,9 +79,13 @@ expect(mockFetchWeather).toHaveBeenCalledWith({
 
 If you want to check what `mockFetchWeather` has been called with in your own code, you can use the same approach. Just replace `mockFetchWeather` with the name of your own mock function, and pass the expected arguments to `toHaveBeenCalledWith`.
 
-ddomin212: my mocked function does not get called
+Daniel Dominko: 
+---
+my mocked function does not get called
 
-GitHub Copilot: If your mocked function is not getting called, there could be a few reasons why:
+GitHub Copilot: 
+---
+If your mocked function is not getting called, there could be a few reasons why:
 
 1. Make sure that you are mocking the correct module. In the example I provided earlier, we are mocking the `weatherService` module:
 
@@ -112,9 +124,13 @@ If your test is not triggering the code that calls the mocked function, you may 
 
 If none of these solutions work, please provide more information about your code and the specific problem you are encountering, and I'll do my best to help you debug it.
 
-ddomin212: i get a warning about using act to update the state in React, how can i implement it
+Daniel Dominko: 
+---
+i get a warning about using act to update the state in React, how can i implement it
 
-GitHub Copilot: The `act` function is used to make sure that state updates and other side effects are correctly handled in React tests. To fix the warning about using `act` to update the state in your test, you can wrap the code that updates the state in an `act` block.
+GitHub Copilot: 
+---
+The `act` function is used to make sure that state updates and other side effects are correctly handled in React tests. To fix the warning about using `act` to update the state in your test, you can wrap the code that updates the state in an `act` block.
 
 Here's an example of how you can use `act` to update the state in your test:
 
@@ -150,9 +166,13 @@ In this example, we've wrapped the code that updates the state (typing in the se
 
 By wrapping state updates in an `act` block, you can ensure that your tests are correctly simulating user interactions and that your components are behaving as expected.
 
-ddomin212: my fetch weather returns a promise, while the mock is just a function, could that be the problem?
+Daniel Dominko: 
+---
+my fetch weather returns a promise, while the mock is just a function, could that be the problem?
 
-GitHub Copilot: Yes, that could be the problem. If your `fetchWeather` function returns a promise, you need to make sure that your mock function returns a promise as well. You can do this by using the `Promise.resolve()` method to create a resolved promise with the data you want to return.
+GitHub Copilot: 
+---
+Yes, that could be the problem. If your `fetchWeather` function returns a promise, you need to make sure that your mock function returns a promise as well. You can do this by using the `Promise.resolve()` method to create a resolved promise with the data you want to return.
 
 Here's an example of how you can modify the mock function to return a promise:
 
@@ -168,17 +188,25 @@ In this example, we've modified the `mockFetchWeather` function to return a reso
 
 By returning a promise from your mock function, you can make sure that your test correctly handles asynchronous code and that your components behave as expected.
 
-ddomin212: do i not have to import jest first?
+Daniel Dominko: 
+---
+do i not have to import jest first?
 
-GitHub Copilot: You don't need to import `jest` explicitly in your test files if you're using Jest as your test runner. Jest automatically provides a global `jest` object that you can use to configure your tests and create mock functions.
+GitHub Copilot: 
+---
+You don't need to import `jest` explicitly in your test files if you're using Jest as your test runner. Jest automatically provides a global `jest` object that you can use to configure your tests and create mock functions.
 
 However, if you're using some of the more advanced features of Jest (such as custom matchers or test environment configuration), you may need to import `jest` explicitly in your test files.
 
 In the example you provided, you're using the `jest.fn()` method to create a mock function, which is part of the `jest` object. Since you're able to use `jest.fn()` without importing `jest` explicitly, it's likely that Jest is already set up correctly in your project and you don't need to import it explicitly in your test files.
 
-ddomin212: I am now getting this error inside my mocked function, any ideas why? "TypeError: Cannot read properties of undefined (reading 'catch')"
+Daniel Dominko: 
+---
+I am now getting this error inside my mocked function, any ideas why? "TypeError: Cannot read properties of undefined (reading 'catch')"
 
-GitHub Copilot: The error message "TypeError: Cannot read properties of undefined (reading 'catch')" usually occurs when you try to call the `catch` method on a value that is `undefined`. This can happen if your mock function is not returning a promise or if the promise it returns is not resolving correctly.
+GitHub Copilot: 
+---
+The error message "TypeError: Cannot read properties of undefined (reading 'catch')" usually occurs when you try to call the `catch` method on a value that is `undefined`. This can happen if your mock function is not returning a promise or if the promise it returns is not resolving correctly.
 
 To fix this error, you can make sure that your mock function returns a promise that resolves correctly. Here's an example of how you can modify the mock function to return a resolved promise:
 
@@ -196,9 +224,13 @@ In this example, we've modified the `mockFetchWeather` function to return a reso
 
 By returning a promise from your mock function, you can make sure that your test correctly handles asynchronous code and that your components behave as expected.
 
-ddomin212: how can i create a new promise with reslove and reject methods
+Daniel Dominko: 
+---
+how can i create a new promise with reslove and reject methods
 
-GitHub Copilot: To create a new promise with `resolve` and `reject` methods, you can use the `Promise` constructor. Here's an example of how you can create a new promise that resolves with a value:
+GitHub Copilot: 
+---
+To create a new promise with `resolve` and `reject` methods, you can use the `Promise` constructor. Here's an example of how you can create a new promise that resolves with a value:
 
 ```javascript
 const myPromise = new Promise((resolve, reject) => {
@@ -220,9 +252,13 @@ In this example, we're creating a new promise that rejects with an `Error` objec
 
 By using the `Promise` constructor, you can create new promises with custom behavior and use them in your tests or other parts of your code.
 
-ddomin212: do i have to also mock the function arguments the original function has?
+Daniel Dominko: 
+---
+do i have to also mock the function arguments the original function has?
 
-GitHub Copilot: If the function you are mocking takes arguments, you can mock those arguments by passing them to the mock function when you call it. This can be useful if you want to test how your component behaves when it receives different input.
+GitHub Copilot: 
+---
+If the function you are mocking takes arguments, you can mock those arguments by passing them to the mock function when you call it. This can be useful if you want to test how your component behaves when it receives different input.
 
 Here's an example of how you can mock a function with arguments:
 
@@ -239,9 +275,13 @@ In this example, we're creating a mock function called `myMockFunction` that tak
 
 By mocking function arguments, you can test how your component behaves when it receives different input and make sure that it handles that input correctly.
 
-ddomin212: how can i mock a function that goes through multiple nested promises
+Daniel Dominko: 
+---
+how can i mock a function that goes through multiple nested promises
 
-GitHub Copilot: To mock a function that goes through multiple nested promises, you can use the `mockImplementation` method to define a custom implementation for your mock function. In the implementation, you can return a promise that resolves with the data you want to test.
+GitHub Copilot: 
+---
+To mock a function that goes through multiple nested promises, you can use the `mockImplementation` method to define a custom implementation for your mock function. In the implementation, you can return a promise that resolves with the data you want to test.
 
 Here's an example of how you can mock a function that goes through multiple nested promises:
 
@@ -270,9 +310,13 @@ We're also using the `jest.mock` method to mock the `weatherService` module. In 
 
 By mocking a function that goes through multiple nested promises, you can test how your component behaves when it receives data from an API and make sure that it handles that data correctly.
 
-ddomin212: i also have a catch on the original function, and now it says .catch is not a function, how should i modify the code?
+Daniel Dominko: 
+---
+i also have a catch on the original function, and now it says .catch is not a function, how should i modify the code?
 
-GitHub Copilot: If the original function has a `.catch()` method, you can modify your mock function to return a promise that also has a `.catch()` method. Here's an example of how you can modify the mock function to include a `.catch()` method:
+GitHub Copilot: 
+---
+If the original function has a `.catch()` method, you can modify your mock function to return a promise that also has a `.catch()` method. Here's an example of how you can modify the mock function to include a `.catch()` method:
 
 ```javascript
 const mockFetchWeather = jest.fn(() =>
@@ -299,9 +343,13 @@ In this example, we've modified the `mockFetchWeather` function to include a `.c
 
 By including a `.catch()` method in your mock function, you can make sure that your test correctly handles errors and that your components behave as expected.
 
-ddomin212: skip module in jest
+Daniel Dominko: 
+---
+skip module in jest
 
-GitHub Copilot: To skip a module in Jest, you can use the `jest.mock()` method with a second argument that returns a factory function that returns an empty object. This will cause Jest to replace the module with an empty object, effectively skipping it.
+GitHub Copilot: 
+---
+To skip a module in Jest, you can use the `jest.mock()` method with a second argument that returns a factory function that returns an empty object. This will cause Jest to replace the module with an empty object, effectively skipping it.
 
 Here's an example of how you can skip a module in Jest:
 

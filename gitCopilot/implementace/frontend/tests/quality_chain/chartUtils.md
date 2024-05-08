@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: The code you've provided is a test suite for two functions: `createChartData` and `setXYValues`. The tests are well-structured and follow good practices for unit testing. However, here are a few suggestions that could improve the readability and maintainability of your tests:
+GitHub Copilot: 
+---
+The code you've provided is a test suite for two functions: `createChartData` and `setXYValues`. The tests are well-structured and follow good practices for unit testing. However, here are a few suggestions that could improve the readability and maintainability of your tests:
 
 1. **Use `beforeEach` to DRY up your tests**: If you find that you're repeating the same setup code in multiple tests, consider using a `beforeEach` block to perform that setup once for each test. In your case, the `xValues`, `yValues`, and `selectedOption` could be defined in a `beforeEach` block if they are used in multiple tests.
 
@@ -14,9 +18,13 @@ GitHub Copilot: The code you've provided is a test suite for two functions: `cre
 
 Remember, these are just suggestions and may not all apply to your specific situation. The most important thing is that your tests are clear, concise, and accurately test the functionality of your code.
 
-ddomin212: How well does the code in the current module align to the latest ES standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to the latest ES standards?
 
-GitHub Copilot: The code you've provided is written in modern JavaScript and aligns well with the latest ECMAScript (ES) standards. Here are some specific aspects that align with modern ES standards:
+GitHub Copilot: 
+---
+The code you've provided is written in modern JavaScript and aligns well with the latest ECMAScript (ES) standards. Here are some specific aspects that align with modern ES standards:
 
 1. **ES Modules**: You're using ES modules (`import`/`export`) which is the standard in modern JavaScript for modularizing code.
 
@@ -32,9 +40,13 @@ GitHub Copilot: The code you've provided is written in modern JavaScript and ali
 
 Remember, these are just some of the features of modern ES standards. There are many other features not mentioned here that could be used depending on the specific requirements of your code.
 
-ddomin212: Could i use different JS syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different JS syntax to make the current module more performant or readable?
 
-GitHub Copilot: The code you've provided is already quite readable and follows good practices for writing test suites in JavaScript. However, there are a few minor changes you could make to improve readability:
+GitHub Copilot: 
+---
+The code you've provided is already quite readable and follows good practices for writing test suites in JavaScript. However, there are a few minor changes you could make to improve readability:
 
 1. **Use `beforeEach` for common setup**: If you have more tests in the `describe` blocks for `createChartData` and `setXYValues` and they use the same setup code, you could use a `beforeEach` block to avoid repeating the setup code in each test.
 
@@ -44,9 +56,13 @@ GitHub Copilot: The code you've provided is already quite readable and follows g
 
 As for performance, the performance of your tests is unlikely to be a concern unless you have a very large number of tests or your tests are doing a lot of heavy computation. In general, the most important thing for test code is that it is clear and easy to understand, so that it can serve as documentation for how the code under test is supposed to behave.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code you've provided is a test suite for two functions: `createChartData` and `setXYValues`. From the perspective of the test suite, it's quite clean and adheres to many of the principles you've mentioned:
+GitHub Copilot: 
+---
+The code you've provided is a test suite for two functions: `createChartData` and `setXYValues`. From the perspective of the test suite, it's quite clean and adheres to many of the principles you've mentioned:
 
 1. **DRY (Don't Repeat Yourself)**: The tests do not contain any repeated code, which is good. If you find that you're repeating the same setup code in multiple tests, consider using a `beforeEach` block to perform that setup once for each test.
 
@@ -60,9 +76,13 @@ As for the SOLID principles, they are more applicable to the design of classes a
 
 In terms of improvements, the code is already quite good. One suggestion would be to use `jest.mock` to automatically mock the `setXValues` and `setYValues` functions, which would make your tests more concise and easier to read.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The test module you've provided is well-structured and follows good practices for unit testing in JavaScript. Here are some specific aspects that stand out:
+GitHub Copilot: 
+---
+The test module you've provided is well-structured and follows good practices for unit testing in JavaScript. Here are some specific aspects that stand out:
 
 1. **Descriptive Test Names**: The names of your tests clearly describe what the test is checking. This is a good practice as it makes it easier to understand what each test is doing.
 

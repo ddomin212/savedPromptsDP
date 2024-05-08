@@ -1,6 +1,10 @@
-ddomin212: Could you give me any refactoring tips the AirQuality component, in terms of code performance, clean code (DRY, SOLID, KISS...), code standards (ES), readability, accessibility, web responsivness and testability? If you have idea for any different metrics that could be mentioned, mention them along with the improvments.
+Daniel Dominko: 
+---
+Could you give me any refactoring tips the AirQuality component, in terms of code performance, clean code (DRY, SOLID, KISS...), code standards (ES), readability, accessibility, web responsivness and testability? If you have idea for any different metrics that could be mentioned, mention them along with the improvments.
 
-GitHub Copilot: Sure, here are some suggestions for refactoring the `AirQuality` component:
+GitHub Copilot: 
+---
+Sure, here are some suggestions for refactoring the `AirQuality` component:
 
 - **Performance**: The `formatToLocalTime` function is called every time the component is rendered, even if the `timestamp` prop hasn't changed. You could memoize this function using the `useMemo` hook to avoid unnecessary re-renders. Additionally, you could consider using the `React.memo` higher-order component to memoize the entire `AirQuality` component and avoid re-rendering it when its props haven't changed.
 
@@ -18,9 +22,13 @@ GitHub Copilot: Sure, here are some suggestions for refactoring the `AirQuality`
 
 I hope these suggestions help you improve the `AirQuality` component!
 
-ddomin212: Could you give me any refactoring tips the AirQuality component, in terms of code performance, clean code (DRY, SOLID, KISS...) and code standards (ES)?
+Daniel Dominko: 
+---
+Could you give me any refactoring tips the AirQuality component, in terms of code performance, clean code (DRY, SOLID, KISS...) and code standards (ES)?
 
-GitHub Copilot: Sure! Here are some suggestions for refactoring the `AirQuality` component:
+GitHub Copilot: 
+---
+Sure! Here are some suggestions for refactoring the `AirQuality` component:
 
 - **Performance**: The `formatToLocalTime` function is called every time the component is rendered, even if the `timestamp` prop hasn't changed. You could memoize this function using the `useMemo` hook to avoid unnecessary re-renders. Additionally, you could consider using the `React.memo` higher-order component to memoize the entire `AirQuality` component and avoid re-rendering it when its props haven't changed.
 
@@ -30,9 +38,13 @@ GitHub Copilot: Sure! Here are some suggestions for refactoring the `AirQuality`
 
 I hope these suggestions help you improve the `AirQuality` component!
 
-ddomin212: Could you give me any refactoring tips the AirQuality component?
+Daniel Dominko: 
+---
+Could you give me any refactoring tips the AirQuality component?
 
-GitHub Copilot: Sure! Here are some suggestions for refactoring the `AirQuality` component:
+GitHub Copilot: 
+---
+Sure! Here are some suggestions for refactoring the `AirQuality` component:
 
 - **Performance**: The `formatToLocalTime` function is called every time the component is rendered, even if the `timestamp` prop hasn't changed. You could memoize this function using the `useMemo` hook to avoid unnecessary re-renders. Additionally, you could consider using the `React.memo` higher-order component to memoize the entire `AirQuality` component and avoid re-rendering it when its props haven't changed.
 

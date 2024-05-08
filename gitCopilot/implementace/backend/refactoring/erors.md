@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the errors.py module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the errors.py module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the `errors.py` module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the `errors.py` module:
 
 1. `handle_pyrebase(e)`: This function could be simplified by using a single regular expression to capture both the message and the code. This would reduce the number of `re.compile` and `re.search` calls, making the function more efficient.
 
@@ -48,9 +52,13 @@ def handle_exception(func):
 
 In this refactored code, `handle_pyrebase` uses a single regular expression to capture both the message and the code. `handle_exception` uses custom exception classes to handle different types of errors.
 
-ddomin212: Would you recommend any algorithms or data structures to increase the peformance of the errors.py module?
+Daniel Dominko: 
+---
+Would you recommend any algorithms or data structures to increase the peformance of the errors.py module?
 
-GitHub Copilot: The `errors.py` module primarily deals with error handling and does not involve any complex computations or data manipulations that would benefit significantly from specific algorithms or data structures. 
+GitHub Copilot: 
+---
+The `errors.py` module primarily deals with error handling and does not involve any complex computations or data manipulations that would benefit significantly from specific algorithms or data structures. 
 
 However, there are a few general improvements that could be made:
 
@@ -97,9 +105,13 @@ def handle_exception(func):
 
 In this refactored code, `handle_pyrebase` uses a single regular expression to capture both the message and the code. `handle_exception` logs the full exception information when an unexpected error occurs.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the errors.py module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the errors.py module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the `errors.py` module is relatively clean and follows many good practices, but there's always room for improvement. Let's evaluate it according to the principles you mentioned:
+GitHub Copilot: 
+---
+The code in the `errors.py` module is relatively clean and follows many good practices, but there's always room for improvement. Let's evaluate it according to the principles you mentioned:
 
 1. **SOLID**: The Single Responsibility Principle (SRP) is followed as each function has a clear, single responsibility. The Open/Closed Principle is not applicable here as there are no classes that could be extended or modified. The Liskov Substitution Principle, Interface Segregation Principle, and Dependency Inversion Principle are also not applicable as there are no classes or interfaces.
 
@@ -155,9 +167,13 @@ def handle_exception(func):
 
 In this refactored code, `handle_pyrebase` uses a single regular expression to capture both the message and the code. `handle_exception` logs the full exception information when an unexpected error occurs.
 
-ddomin212: How would you handle the documentation of the errors.py module? Is it clear, or would you have difficulties interpreting it?
+Daniel Dominko: 
+---
+How would you handle the documentation of the errors.py module? Is it clear, or would you have difficulties interpreting it?
 
-GitHub Copilot: The `errors.py` module currently lacks documentation, which can make it difficult for other developers to understand its purpose and how to use it. Here are some suggestions for improving the documentation:
+GitHub Copilot: 
+---
+The `errors.py` module currently lacks documentation, which can make it difficult for other developers to understand its purpose and how to use it. Here are some suggestions for improving the documentation:
 
 1. **Module-Level Docstring**: At the top of the module, provide a brief overview of what the module does. This should include a high-level description of the module's purpose and any important details that a developer should know.
 
@@ -205,9 +221,13 @@ def handle_exception(func):
 
 These docstrings follow the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html), which is a widely used standard for Python docstrings.
 
-ddomin212: Are all the functions inside the errors.py module easily testable? If not, could you give me tips on how I could improve the testability of specific functions?
+Daniel Dominko: 
+---
+Are all the functions inside the errors.py module easily testable? If not, could you give me tips on how I could improve the testability of specific functions?
 
-GitHub Copilot: The functions in the `errors.py` module are relatively straightforward to test because they are pure functions that do not depend on any external state. However, there are a few things you could do to improve their testability:
+GitHub Copilot: 
+---
+The functions in the `errors.py` module are relatively straightforward to test because they are pure functions that do not depend on any external state. However, there are a few things you could do to improve their testability:
 
 1. **Dependency Injection**: The `handle_pyrebase` function depends on the `re` module. To make this function easier to test, you could pass the regular expression as a parameter. This would allow you to use a mock regular expression in your tests.
 
@@ -263,9 +283,13 @@ def handle_exception(func, catch_exceptions=True):
 
 In this refactored code, `handle_pyrebase` takes optional parameters for the regular expressions, and `handle_exception` takes an optional parameter that controls whether exceptions should be caught. This makes the functions easier to test because you can control their behavior more precisely.
 
-ddomin212: How well does the code in the errors.py module align to PEP standards?
+Daniel Dominko: 
+---
+How well does the code in the errors.py module align to PEP standards?
 
-GitHub Copilot: The code in the `errors.py` module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
+GitHub Copilot: 
+---
+The code in the `errors.py` module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
 
 1. **Indentation**: The code uses 4 spaces per indentation level, which is recommended by PEP 8.
 
@@ -323,9 +347,13 @@ def handle_exception(func):
 
 In this refactored code, docstrings have been added to the functions, and the `handle_exception` function has been modified to catch specific exceptions.
 
-ddomin212: Could I use different Python syntax to make the errors.py module more performant or readable?
+Daniel Dominko: 
+---
+Could I use different Python syntax to make the errors.py module more performant or readable?
 
-GitHub Copilot: The code in the `errors.py` module is already quite readable and performant. However, there are a few minor improvements that could be made to enhance readability:
+GitHub Copilot: 
+---
+The code in the `errors.py` module is already quite readable and performant. However, there are a few minor improvements that could be made to enhance readability:
 
 1. **Combine Regular Expressions**: In the `handle_pyrebase` function, you could combine the two regular expressions into one. This would make the code slightly more performant and also more readable, as it would be clear that the message and code are being extracted from the same string.
 
@@ -368,9 +396,13 @@ def handle_exception(func):
 
 In this refactored code, `handle_pyrebase` uses a single regular expression to capture both the message and the code. `handle_exception` uses f-strings to format the error messages.
 
-ddomin212: What design patterns could i use inside the errors.py module?
+Daniel Dominko: 
+---
+What design patterns could i use inside the errors.py module?
 
-GitHub Copilot: The `errors.py` module already uses a couple of design patterns:
+GitHub Copilot: 
+---
+The `errors.py` module already uses a couple of design patterns:
 
 1. **Decorator Pattern**: The `handle_exception` function is a decorator. It wraps another function and adds additional behavior (error handling) to it.
 
@@ -384,9 +416,13 @@ If you want to introduce more design patterns, here are a few possibilities:
 
 However, keep in mind that design patterns are tools to solve common problems, not goals in themselves. If the current design of your module is meeting your needs, there may not be a need to introduce additional patterns.
 
-ddomin212: How could I implement the Strategy pattern inside errors.py module?
+Daniel Dominko: 
+---
+How could I implement the Strategy pattern inside errors.py module?
 
-GitHub Copilot: To implement the Strategy pattern in the `errors.py` module, you could define a base class or interface for an error handler, and then create subclasses for each specific type of error handling strategy. Here's an example of how you could do this:
+GitHub Copilot: 
+---
+To implement the Strategy pattern in the `errors.py` module, you could define a base class or interface for an error handler, and then create subclasses for each specific type of error handling strategy. Here's an example of how you could do this:
 
 ```python
 from abc import ABC, abstractmethod
@@ -441,9 +477,13 @@ def another_function():
 
 This design allows you to easily switch between different error handling strategies without having to modify the functions that use them.
 
-ddomin212: How could I implement the Chain of Responsibility pattern inside errors.py module?
+Daniel Dominko: 
+---
+How could I implement the Chain of Responsibility pattern inside errors.py module?
 
-GitHub Copilot: To implement the Chain of Responsibility pattern in the `errors.py` module, you could define a base class or interface for an error handler, and then create subclasses for each specific type of error handling strategy. Each handler in the chain would have a reference to the next handler in the chain and would pass the error along if it couldn't handle it. Here's an example of how you could do this:
+GitHub Copilot: 
+---
+To implement the Chain of Responsibility pattern in the `errors.py` module, you could define a base class or interface for an error handler, and then create subclasses for each specific type of error handling strategy. Each handler in the chain would have a reference to the next handler in the chain and would pass the error along if it couldn't handle it. Here's an example of how you could do this:
 
 ```python
 from abc import ABC, abstractmethod

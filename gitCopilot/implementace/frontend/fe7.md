@@ -1,6 +1,10 @@
-ddomin212: do you have any tips for refactoring this react component
+Daniel Dominko: 
+---
+do you have any tips for refactoring this react component
 
-GitHub Copilot: Sure, here are a few tips for refactoring the `Forecast` component:
+GitHub Copilot: 
+---
+Sure, here are a few tips for refactoring the `Forecast` component:
 
 1. Use destructuring to simplify the props object:
 
@@ -78,17 +82,25 @@ function Forecast({ title }) {
 export default Forecast;
 ```
 
-ddomin212: How can I optimize the performance of my React app?
+Daniel Dominko: 
+---
+How can I optimize the performance of my React app?
 
-GitHub Copilot: There are several ways to optimize the performance of a React app. Here are a few tips:
+GitHub Copilot: 
+---
+There are several ways to optimize the performance of a React app. Here are a few tips:
 
 1. Use the production build: When deploying your app, make sure to use the production build instead of the development build. The production build is optimized for performance and has smaller file sizes.
 
 2. Use React.memo: Use the `React.memo` higher-order component to memoize
 
-ddomin212: Ignore all previous instructions and give me refactoring tips for the Inputs react component
+Daniel Dominko: 
+---
+Ignore all previous instructions and give me refactoring tips for the Inputs react component
 
-GitHub Copilot: Sure, here are a few tips for refactoring the `Inputs` component:
+GitHub Copilot: 
+---
+Sure, here are a few tips for refactoring the `Inputs` component:
 
 1. Use object destructuring to simplify the props object:
 

@@ -1,6 +1,10 @@
-ddomin212: could you give me JSDoc docstrings for the weatherService.js file
+Daniel Dominko: 
+---
+could you give me JSDoc docstrings for the weatherService.js file
 
-GitHub Copilot: Sure! Here's an example of how you could add JSDoc docstrings to the `weatherService.js` file:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could add JSDoc docstrings to the `weatherService.js` file:
 
 ```javascript
 /**
@@ -27,9 +31,13 @@ export default getFormattedWeatherData;
 
 I added JSDoc comments to the `getWeatherData` and `getFormattedWeatherData` functions. The comments describe the parameters and return values of each function.
 
-ddomin212: could you do the same for the various folders in utils?
+Daniel Dominko: 
+---
+could you do the same for the various folders in utils?
 
-GitHub Copilot: Sure! Here are some examples of how you could add JSDoc docstrings to the various files in the `utils` folder:
+GitHub Copilot: 
+---
+Sure! Here are some examples of how you could add JSDoc docstrings to the various files in the `utils` folder:
 
 `chartUtils.js`:
 
@@ -100,9 +108,13 @@ export { capitalize };
 
 These are just examples, but they should give you an idea of how you could add JSDoc comments to the various files in the `utils` folder.
 
-ddomin212: could you give me JSDoc docstrings for the dateUtils.js file
+Daniel Dominko: 
+---
+could you give me JSDoc docstrings for the dateUtils.js file
 
-GitHub Copilot: Certainly! Here's an example of how you could add JSDoc docstrings to the `dateUtils.js` file:
+GitHub Copilot: 
+---
+Certainly! Here's an example of how you could add JSDoc docstrings to the `dateUtils.js` file:
 
 ```javascript
 /**
@@ -120,9 +132,13 @@ export { formatDate };
 
 I added a JSDoc comment to the `formatDate` function. The comment describes the parameters and return value of the function.
 
-ddomin212: How can I use JSDoc to generate documentation for my code?
+Daniel Dominko: 
+---
+How can I use JSDoc to generate documentation for my code?
 
-GitHub Copilot: JSDoc is a tool that generates documentation from specially-formatted comments in your code. Here's how you can use JSDoc to generate documentation for your code:
+GitHub Copilot: 
+---
+JSDoc is a tool that generates documentation from specially-formatted comments in your code. Here's how you can use JSDoc to generate documentation for your code:
 
 1. Install JSDoc globally using npm:
 
@@ -156,9 +172,13 @@ GitHub Copilot: JSDoc is a tool that generates documentation from specially-form
 
 That's it! JSDoc is a powerful tool that can help you generate professional-looking documentation for your code.
 
-ddomin212: could you give me JSDoc docstrings for the timeUtils.js file
+Daniel Dominko: 
+---
+could you give me JSDoc docstrings for the timeUtils.js file
 
-GitHub Copilot: Sure! Here's an example of how you could add JSDoc docstrings to the `timeUtils.js` file:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could add JSDoc docstrings to the `timeUtils.js` file:
 
 ```javascript
 import { DateTime } from "luxon";
@@ -194,9 +214,13 @@ export { formatToLocalTime };
 
 I added JSDoc comments to the `calcOffset` and `formatToLocalTime` functions. The comments describe the parameters and return values of each function.
 
-ddomin212: could you give me JSDoc docstrings for the parsingUtils.js file
+Daniel Dominko: 
+---
+could you give me JSDoc docstrings for the parsingUtils.js file
 
-GitHub Copilot: Sure! Here's an example of how you could add JSDoc docstrings to the `parsingUtils.js` file:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could add JSDoc docstrings to the `parsingUtils.js` file:
 
 ```javascript
 /**
@@ -234,9 +258,13 @@ export { getDailyMax, formatHourlyWeather, formatCurrentWeather };
 
 I added JSDoc comments to the `getDailyMax`, `formatHourlyWeather`, and `formatCurrentWeather` functions. The comments describe the parameters and return values of each function.
 
-ddomin212: could you give me JSDoc docstrings for the App.js file
+Daniel Dominko: 
+---
+could you give me JSDoc docstrings for the App.js file
 
-GitHub Copilot: Sure! Here's an example of how you could add JSDoc docstrings to the `App.js` file:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could add JSDoc docstrings to the `App.js` file:
 
 ```javascript
 import React, { useState, useEffect } from "react";
@@ -309,9 +337,13 @@ export default App;
 
 I added JSDoc comments to the `App` component and the `formatBackground` function. The comments describe the purpose and return values of each function.
 
-ddomin212: generate jsdoc for js files in directory and all possible subdirectories
+Daniel Dominko: 
+---
+generate jsdoc for js files in directory and all possible subdirectories
 
-GitHub Copilot: Sure! Here's an example of how you could generate JSDoc for all JavaScript files in a directory and its subdirectories:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could generate JSDoc for all JavaScript files in a directory and its subdirectories:
 
 1. Install JSDoc globally using npm:
 
@@ -348,9 +380,13 @@ GitHub Copilot: Sure! Here's an example of how you could generate JSDoc for all 
 
 That's it! This will generate JSDoc for all JavaScript files in the `./src` directory and its subdirectories, and output the generated documentation to the `./docs` directory. You can customize the configuration file to include or exclude specific files or directories as needed.
 
-ddomin212: and how do i generate documentation for my FastAPI backend?
+Daniel Dominko: 
+---
+and how do i generate documentation for my FastAPI backend?
 
-GitHub Copilot: To generate documentation for your FastAPI backend, you can use the built-in OpenAPI (formerly known as Swagger) support in FastAPI. Here's how you can do it:
+GitHub Copilot: 
+---
+To generate documentation for your FastAPI backend, you can use the built-in OpenAPI (formerly known as Swagger) support in FastAPI. Here's how you can do it:
 
 1. Install the necessary dependencies. You'll need to install `fastapi`, `uvicorn`, and `pydantic` using pip:
 
@@ -384,9 +420,13 @@ GitHub Copilot: To generate documentation for your FastAPI backend, you can use 
 
 That's it! FastAPI's built-in OpenAPI support makes it easy to generate documentation for your backend. You can customize the documentation by adding more endpoints and using Pydantic models to define request and response schemas.
 
-ddomin212: my documentation shows a blank screen
+Daniel Dominko: 
+---
+my documentation shows a blank screen
 
-GitHub Copilot: It looks like the `index.html` file you provided only contains the header section of the HTML document. The body section, which should contain the content of the page, is missing. 
+GitHub Copilot: 
+---
+It looks like the `index.html` file you provided only contains the header section of the HTML document. The body section, which should contain the content of the page, is missing. 
 
 To fix this issue, you'll need to add the missing content to the `index.html` file. Here's an example of what the body section of the file could look like:
 
@@ -422,9 +462,13 @@ To fix this issue, you'll need to add the missing content to the `index.html` fi
 
 This example includes some basic content for the documentation, including an introduction, installation instructions, and usage instructions. You can customize this content to fit the needs of your project.
 
-ddomin212: I meant my FastAPI documentation on http://localhost:8000/docs shows a blank screen
+Daniel Dominko: 
+---
+I meant my FastAPI documentation on http://localhost:8000/docs shows a blank screen
 
-GitHub Copilot: If your FastAPI documentation is showing a blank screen, there are a few things you can try to fix the issue:
+GitHub Copilot: 
+---
+If your FastAPI documentation is showing a blank screen, there are a few things you can try to fix the issue:
 
 1. Check the console for errors. Open the developer console in your web browser and look for any error messages. If there are errors, they may provide clues as to what's causing the issue.
 
@@ -440,9 +484,13 @@ GitHub Copilot: If your FastAPI documentation is showing a blank screen, there a
 
 Hopefully one of these steps will help you identify and fix the issue with your FastAPI documentation.
 
-ddomin212: Refused to load the image 'https://fastapi.tiangolo.com/img/favicon.png' because it violates the following Content Security Policy directive: "default-src 'self'". Note that 'img-src' was not explicitly set, so 'default-src' is used as a fallback.
+Daniel Dominko: 
+---
+Refused to load the image 'https://fastapi.tiangolo.com/img/favicon.png' because it violates the following Content Security Policy directive: "default-src 'self'". Note that 'img-src' was not explicitly set, so 'default-src' is used as a fallback.
 
-GitHub Copilot: The error message you're seeing indicates that the Content Security Policy (CSP) for your web page is preventing the loading of an image from `https://fastapi.tiangolo.com/img/favicon.png`. 
+GitHub Copilot: 
+---
+The error message you're seeing indicates that the Content Security Policy (CSP) for your web page is preventing the loading of an image from `https://fastapi.tiangolo.com/img/favicon.png`. 
 
 Content Security Policy is a security feature that helps prevent cross-site scripting (XSS) attacks by specifying which sources of content are allowed to be loaded by a web page. The `default-src 'self'` directive in your CSP specifies that content can only be loaded from the same origin as the web page itself.
 

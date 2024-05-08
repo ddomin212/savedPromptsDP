@@ -1,6 +1,10 @@
-ddomin212: could you give me tests for the buyPremium function?
+Daniel Dominko: 
+---
+could you give me tests for the buyPremium function?
 
-GitHub Copilot: Sure! Here's an example of how you could test the `buyPremium` function using Jest:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could test the `buyPremium` function using Jest:
 
 ```javascript
 import { buyPremium } from "./accountService";
@@ -46,9 +50,13 @@ describe("buyPremium", () => {
 
 This test suite uses Jest's mocking functionality to simulate the `fetch` function and verify that the `buyPremium` function makes the expected request to the payment endpoint. It also tests that the function correctly handles both successful and failed responses from the server.
 
-ddomin212: fetch.resetMocks is not a function
+Daniel Dominko: 
+---
+fetch.resetMocks is not a function
 
-GitHub Copilot: `fetch.resetMocks()` is a method provided by the `jest-fetch-mock` library, which is used to mock the `fetch` function in Jest tests. 
+GitHub Copilot: 
+---
+`fetch.resetMocks()` is a method provided by the `jest-fetch-mock` library, which is used to mock the `fetch` function in Jest tests. 
 
 To use it, you need to install the `jest-fetch-mock` library and configure Jest to use it. Here's an example of how you can do this:
 
@@ -74,9 +82,13 @@ To use it, you need to install the `jest-fetch-mock` library and configure Jest 
 
 I hope this helps! Let me know if you have any other questions.
 
-ddomin212: i do not get any calls on my mock
+Daniel Dominko: 
+---
+i do not get any calls on my mock
 
-GitHub Copilot: If you're not seeing any calls to your mock `fetch` function, there could be a few different reasons why this is happening. Here are some things you can check:
+GitHub Copilot: 
+---
+If you're not seeing any calls to your mock `fetch` function, there could be a few different reasons why this is happening. Here are some things you can check:
 
 1. Make sure you're using `fetchMock` instead of the real `fetch` function in your test file. You can do this by importing `fetchMock` instead of `fetch`, like this:
 
@@ -111,9 +123,13 @@ GitHub Copilot: If you're not seeing any calls to your mock `fetch` function, th
 
 I hope this helps! Let me know if you have any other questions.
 
-ddomin212: could you give me tests for the functions in this module?
+Daniel Dominko: 
+---
+could you give me tests for the functions in this module?
 
-GitHub Copilot: Certainly! Here's an example of how you could test the `authRequest` function using Jest:
+GitHub Copilot: 
+---
+Certainly! Here's an example of how you could test the `authRequest` function using Jest:
 
 ```javascript
 import { authRequest } from "./authService";
@@ -166,9 +182,13 @@ describe("authRequest", () => {
 
 This test suite uses Jest's mocking functionality to simulate the `fetch` function and verify that the `authRequest` function makes the expected request to the specified route. It also tests that the function correctly handles both successful and failed responses from the server, and that it calls the `setUserData` function with the correct data if the request is successful.
 
-ddomin212: i need to chce for the res.status == 200, how can i add this to the fetch mock
+Daniel Dominko: 
+---
+i need to chce for the res.status == 200, how can i add this to the fetch mock
 
-GitHub Copilot: To test that the `authRequest` function correctly handles a successful response with a status code of 200, you can modify the `fetch.mockResponseOnce` call to include a `status` property in the second argument, like this:
+GitHub Copilot: 
+---
+To test that the `authRequest` function correctly handles a successful response with a status code of 200, you can modify the `fetch.mockResponseOnce` call to include a `status` property in the second argument, like this:
 
 ```javascript
 fetch.mockResponseOnce(JSON.stringify({ tier: "premium" }), { status: 200 });
@@ -196,9 +216,13 @@ This test checks that the `setUserData` function is called with the expected dat
 
 I hope this helps! Let me know if you have any other questions.
 
-ddomin212: could you also give me tests for the signInUser and signOutUser functions?
+Daniel Dominko: 
+---
+could you also give me tests for the signInUser and signOutUser functions?
 
-GitHub Copilot: Sure! Here's an example of how you could test the `signInUser` and `signOutUser` functions using Jest:
+GitHub Copilot: 
+---
+Sure! Here's an example of how you could test the `signInUser` and `signOutUser` functions using Jest:
 
 ```javascript
 import { signInUser, signOutUser } from "./authService";
@@ -260,9 +284,13 @@ describe("signOutUser", () => {
 
 This test suite uses Jest's mocking functionality to simulate the `fetch` function and verify that the `signInUser` and `signOutUser` functions make the expected requests to the backend API. It also tests that the functions correctly handle both successful and failed responses from the server, and that `setUserData` is called with the correct data if the request is successful.
 
-ddomin212: could you give me tests for all the functions inside te weatherService.js module?
+Daniel Dominko: 
+---
+could you give me tests for all the functions inside te weatherService.js module?
 
-GitHub Copilot: Certainly! Here's an example of how you could test the `getWeatherData` function using Jest:
+GitHub Copilot: 
+---
+Certainly! Here's an example of how you could test the `getWeatherData` function using Jest:
 
 ```javascript
 import { getWeatherData } from "./weatherService";
@@ -345,9 +373,13 @@ This test suite checks that the `getCSRFToken` function correctly extracts the C
 
 I hope this helps! Let me know if you have any other questions.
 
-ddomin212: URL object not working in a test enviroment?
+Daniel Dominko: 
+---
+URL object not working in a test enviroment?
 
-GitHub Copilot: That's correct, the `URL` object is not available in all JavaScript environments, including some test environments. If you're running into issues with the `URL` object in your tests, you can use a library like `url-parse` to parse and manipulate URLs instead.
+GitHub Copilot: 
+---
+That's correct, the `URL` object is not available in all JavaScript environments, including some test environments. If you're running into issues with the `URL` object in your tests, you can use a library like `url-parse` to parse and manipulate URLs instead.
 
 Here's an example of how you could modify the `getWeatherData` function to use `url-parse` instead of the `URL` object:
 
@@ -391,9 +423,13 @@ This code uses `url-parse` to create a new URL object from the `BACKEND_URL` and
 
 I hope this helps! Let me know if you have any other questions.
 
-ddomin212: how do i expect a function to throw an error
+Daniel Dominko: 
+---
+how do i expect a function to throw an error
 
-GitHub Copilot: To test that a function throws an error, you can use the `toThrow` method from Jest. Here's an example of how you could modify the `it` block on line 53 to expect the `getWeatherData` function to throw an error:
+GitHub Copilot: 
+---
+To test that a function throws an error, you can use the `toThrow` method from Jest. Here's an example of how you could modify the `it` block on line 53 to expect the `getWeatherData` function to throw an error:
 
 ```javascript
 it("should throw an error if the request fails", async () => {

@@ -1,6 +1,10 @@
-ddomin212: Could you give me refactoring tips for all the functions in the current module?
+Daniel Dominko: 
+---
+Could you give me refactoring tips for all the functions in the current module?
 
-GitHub Copilot: Sure, here are some refactoring tips for the functions in the current module:
+GitHub Copilot: 
+---
+Sure, here are some refactoring tips for the functions in the current module:
 
 1. **Use of setUp method**: Instead of using `setUpClass` to initialize `OpenMeteoAPI`, you can use the `setUp` method. This method is called before each test method, which can help isolate tests from each other.
 
@@ -46,9 +50,13 @@ if __name__ == "__main__":
 
 Remember, the goal of refactoring is to make code clearer and more efficient, not just to make it shorter. Always consider the readability and maintainability of your code when refactoring.
 
-ddomin212: How well does the code in the current module align to PEP standards?
+Daniel Dominko: 
+---
+How well does the code in the current module align to PEP standards?
 
-GitHub Copilot: The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
+GitHub Copilot: 
+---
+The code in the current module generally aligns well with PEP 8, the style guide for Python code. Here are some observations:
 
 1. **Imports**: The imports are organized correctly, with standard library imports first, followed by related third party imports.
 
@@ -80,9 +88,13 @@ class TestOpenMeteoAPI(unittest.TestCase):
 
 Overall, the code is clean, readable, and follows Python's style conventions well.
 
-ddomin212: Could i use different Python syntax to make the current module more performant or readable?
+Daniel Dominko: 
+---
+Could i use different Python syntax to make the current module more performant or readable?
 
-GitHub Copilot: The current module is already quite readable and follows good Python practices. However, there are a few changes that could be made to improve readability and maintainability:
+GitHub Copilot: 
+---
+The current module is already quite readable and follows good Python practices. However, there are a few changes that could be made to improve readability and maintainability:
 
 1. **Use setUp method**: Instead of using `setUpClass` to initialize `OpenMeteoAPI`, you can use the `setUp` method. This method is called before each test method, which can help isolate tests from each other.
 
@@ -124,9 +136,13 @@ if __name__ == "__main__":
 
 Remember, the goal of refactoring is to make code clearer and more efficient, not just to make it shorter. Always consider the readability and maintainability of your code when refactoring.
 
-ddomin212: How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
+Daniel Dominko: 
+---
+How would you rate the cleanliness of the code in the functions of the current module, in terms of things like SOLID, DRY, KISS, cohesion, coupling and any more you can come up with? Could you give me any tips for improving the adherence of the code to the principles i specified earlier?
 
-GitHub Copilot: The code in the current module is generally clean and follows good practices. However, there are a few areas where it could be improved to better adhere to principles like SOLID, DRY, KISS, cohesion, and coupling:
+GitHub Copilot: 
+---
+The code in the current module is generally clean and follows good practices. However, there are a few areas where it could be improved to better adhere to principles like SOLID, DRY, KISS, cohesion, and coupling:
 
 1. **DRY (Don't Repeat Yourself)**: The `query_params` dictionary is repeated in multiple test methods. This could be defined once in the `setUp` method and reused to reduce repetition.
 
@@ -178,9 +194,13 @@ if __name__ == "__main__":
 
 Remember, the goal of refactoring is to make code clearer and more efficient, not just to make it shorter. Always consider the readability and maintainability of your code when refactoring.
 
-ddomin212: Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
+Daniel Dominko: 
+---
+Being that the current module is actually a test module, how would you rate it as a test? Does it align with all the specifics of a proper test, or are there any areas that could be improved?
 
-GitHub Copilot: The current test module is well-structured and covers a variety of scenarios. However, there are a few areas that could be improved:
+GitHub Copilot: 
+---
+The current test module is well-structured and covers a variety of scenarios. However, there are a few areas that could be improved:
 
 1. **Setup and Teardown**: The `setUpClass` method is used to initialize the `OpenMeteoAPI` instance. This is fine if the instance doesn't maintain any state between tests, but if it does, it could lead to tests affecting each other. Consider using the `setUp` method instead, which runs before each test method.
 
